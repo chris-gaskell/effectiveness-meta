@@ -1,0 +1,234 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+# Tables {.unnumbered}
+
+```{r table-1, echo = FALSE, include=T}
+criteria.table <- data.frame(
+  criteria = c("Population", "Intervention","Comparator", "Outcome", "Setting", "Design"),
+  inclusion = c("Sample exclusively aged 16 and above (lower end of sample age range is at least 16).",
+                 "Psychological intervention which includes individual face-to-face psycholgoical therapy (i.e. at least one session).",
+                 "Studies with pre and post intervention time points. Post intervention defined here as up to six months following treatment.",
+                 "Psychological treatment effectiveness using a validated self-report measurement tool.",
+                 "Services for which a patient could expect to access psychological therapy (i.e. routine services).",        
+                  "(i) Pre-post treatment designs. (ii) Studies which do not use a control condition."),
+  exclusion = c("Adolescent/child samples with a lower age limit below 16.",
+                 "Samples which indicate that any proportion of patients did not recieve at least one session of individual psychological therapy.",
+                  "(i) Studies which do not report both pre and post intervention time points. (ii) Studies for which the post intervention time point is beyond six
+                  months following treatment termination. (iii) Treatment randomisation proceadures.",
+                  "Service/settings which do not use a self-report measure of psychological effectiveness. Clinician reported measures were not included in this review.",
+                  "Service/settings that strongly do not appear naturalistic or reflect routine practice.",
+                  "(i) Studies which include a control group. (ii) Studies with N = <6. (iii) Results not available/published in English.")
+                    )
+
+# Table
+    kable(criteria.table, booktabs = TRUE, escape = FALSE, longtable = FALSE, align = "l",
+          caption = "Inclusion and exclusion criteria used in the current review, shown using the PICOS framework (population, intervention, comparator, outcome, setting).") %>% kable_styling(full_width = FALSE, latex_options = c("striped", "hold_position"))  %>% column_spec(1, width = "5em") %>% column_spec(2, width = "15em") %>% column_spec(3, width = "15em") 
+```
+\newpage
+
+
+```{r table-2, echo=FALSE, include=T}
+kable(tabs$mod.desc, booktabs = TRUE, escape = FALSE, align = c("l"),
+      col.names = c("Moderator","Level","Description"), longtable = FALSE,
+      caption = "Sumary coding sheet for extracting study information and categorising by level of moderator sub-group.
+                 These moderators form the categorical, sub-group variables for the current study.") %>%
+      kable_styling(full_width = F, font_size = 12) %>%
+      column_spec(1, width = "5em") %>% column_spec(2, width = "5em") %>% column_spec(3, width = "25em") %>%
+      collapse_rows(columns = 1, valign = "middle", latex_hline = "none") %>%
+      row_spec(c(0:1, 4:7, 9:12, 15:16), extra_latex_after = "\\rowcolor{gray!6}")
+```
+\newpage
+
+```{r table-3, echo = FALSE, include=T}
+kable(tabs$es.proc,
+      booktabs = TRUE, escape = FALSE, longtable = FALSE, align = c("l"),
+      caption = "Proceadure for effect-size calculation.") %>%
+      kable_styling(full_width = FALSE, latex_options = "striped", font_size = 12) %>%
+      column_spec(1, width = "4em") %>% column_spec(2, width = "17em") %>% column_spec(3, width = "13em")
+```
+\newpage
+
+```{r figure-1, include=T, echo=F, message=F, warning=F}
+PRISMAstatement::prisma(found = 10503, found_other = tabs$prisma$found_other, no_dupes = tabs$prisma$no_dupes, screened = tabs$prisma$no_dupes, 
+       screen_exclusions = tabs$prisma$screen_exclusions, full_text = tabs$prisma$full_text, full_text_exclusions = tabs$prisma$full_text_exclusions, 
+       qualitative = tabs$prisma$qualitative, quantitative = tabs$prisma$quantitative, width = 800, height = 1000, font_size = 12)
+# rsvg and DiaggrammeRsvg need to be installed for this to work.
+```
+\newpage
+
+```{r table-4, echo=FALSE, warning=FALSE, message=FALSE, include=T}
+kable(tabs$slr.res,
+      booktabs = TRUE, escape = FALSE, longtable = TRUE, align = c("l"),
+      caption = "Full-text screening decision results for all studies") %>%
+      kable_styling(full_width = FALSE, latex_options = "striped", position = "center") %>%
+      column_spec(1, width = "7em") %>% column_spec(2, width = "7em") %>% column_spec(3, width = "7em") %>% column_spec(4, width = "7em") %>%
+    footnote(general_title = "Note.",
+             general = c("Difinitions for different phases are as follows:",
+                          "Phase 1 = studies identified through the electonic database search.",
+                          "Phase 2 =  studies identified through phase 1 reference lists and citation searching.",
+                          "Phase 3 = grey literature and studies provided by authors contacted during the study."),
+      threeparttable = TRUE, footnote_as_chunk = TRUE, fixed_small_size = T)
+```
+\newpage
+
+```{r table-5, echo=FALSE, include=TRUE}
+kable(tabs$narr,
+      booktabs = TRUE, escape = FALSE, align = c("l"), longtable = FALSE,
+      caption = "Summary statistics across the pooled sample and also by sector for varying variables.",
+      col.names = c("", "Level", "University", "Mild", "Moderate", "Severe", "Other", "Total")
+      ) %>%
+          kable_styling(full_width = F, font_size = 11, latex_options = "hold_position")  %>%
+          row_spec(c(0:1, 6:9, 13:15, 20:21, 27), extra_latex_after = "\\rowcolor{gray!6}")  %>% row_spec(27, hline_after = T) %>%
+          column_spec(3, width = "3em") %>% 
+          collapse_rows(columns = 1, valign = "middle", latex_hline = "none")
+```
+\newpage
+
+```{r figures-2-4, echo=FALSE, include=T, message=FALSE}
+funnel(res$rma$dep, cex.axis = .75, cex.lab = .75, xlab = "Standardised Mean Change", main = "Depression")
+funnel(res$rma$anx, cex.axis = .75, cex.lab = .75, xlab = "Standardised Mean Change", main = "Anxiety")
+funnel(res$rma$gen, cex.axis = .75, cex.lab = .75, xlab = "Standardised Mean Change", main = "Miscellaneous")
+```
+\newpage
+```{r figures-5-7, echo=FALSE, include=T, message=FALSE}
+forest(res$rma$dep,
+       order = "resid", annotate = FALSE, addfit = TRUE, xlim = c(0,3), top = 0, refline = 0, slab = NA,
+       xlab = "Cohen's d (Standardised Mean Change)\nEffect-sizes greater than 0 indicates improvement",
+       mlab = "Pooled Effect Size", cex.axis = .75, cex.lab = .75)
+
+forest(res$rma$anx,
+       order = "resid", annotate = FALSE, addfit = TRUE, xlim = c(0,3), top = 0, refline = 0, slab = NA,
+       xlab = "Cohen's d (Standardised Mean Change)\nEffect-sizes greater than 0 indicates improvement",
+       mlab = "Pooled Effect Size", cex.axis = .75, cex.lab = .75)
+
+forest(res$rma$gen,
+       order = "resid", annotate = FALSE, addfit = TRUE, xlim = c(0,3), top = 0, refline = 0, slab = NA,
+       xlab = "Cohen's d (Standardised Mean Change)\nEffect-sizes greater than 0 indicates improvement",
+       mlab = "Pooled Effect Size", cex.axis = .75, cex.lab = .75)
+```
+\newpage
+
+```{r table-6, echo = FALSE, include = F}
+kable(tabs$rma.sum,
+      booktabs = TRUE, escape = FALSE, longtable = FALSE,
+      align = c("l", "c", "c", "c", "c", "c", "c", "c"),
+      caption = "Findings from the primary meta-analyses.",
+      format.args = list(floating=FALSE)) %>% 
+      kable_styling(full_width = F, latex_options = c("striped", "hold_position"))
+```
+\newpage
+
+```{r table-7, echo=FALSE, include=T,  warning=F, message=F}
+mod.res$sub$dep <- relocate(mod.res$sub$dep, mod, Level, K, SMD, ci, Q, I2)
+
+
+kable(mod.res$sub$dep, booktabs = TRUE, escape = FALSE, align = "l", longtable = TRUE,
+        caption = "subgroup (categorical) moderator analyses for depression outcomes.",
+        col.names = c("Moderator", "Level", "k", "d", "ci", "Q", "I2" )) %>%
+  kable_styling(full_width = F, font_size = 12) %>% 
+        column_spec(1, width = "6em") %>% column_spec(2, width = "6.5em") %>%
+        column_spec(3, width = "2em") %>% column_spec(4, width = "3em") %>%
+        column_spec(5, width = "6em") %>% column_spec(6, width = "5em") %>%
+        column_spec(7, width = "2em") %>%
+    collapse_rows(columns = 1, valign = "top", latex_hline = "none") %>%
+  #row_spec(c(0, 1:3, 7, 14:16, 20)) %>%
+        pack_rows(mod.res$sector$sum$dep, 1,5, italic = T, bold = F, background = "gray!6") %>%
+        pack_rows(mod.res$ITT$sum$dep, 5,6, italic = T, bold = F) %>%
+        pack_rows(mod.res$setting$sum$dep, 7,9, italic = T, bold = F, background = "gray!6") %>%
+        pack_rows(mod.res$cont$sum$dep, 9,10, italic = T,  bold = T) %>% 
+        pack_rows(mod.res$therapy$sum$dep, 14,15, italic = T, bold = F, background = "gray!6") %>% 
+        pack_rows(mod.res$hour$sum$dep, 18,19, italic = T, bold = F) %>% 
+        pack_rows(mod.res$train$sum$dep, 20,21, italic = T, bold = F, background = "gray!6")  %>%
+        pack_rows(mod.res$measures$sum$dep, 22,23, italic = T, bold = F, background = "gray!6")  %>%
+        pack_rows(mod.res$sample.n.group$sum$dep, 24,25, italic = T, bold = F, background = "gray!6") %>% 
+  footnote(general_title = "Note.",
+               general = c("Model Outputs in Bold are significant at either", "* p = <.05.", "** Bonferroni adjustment, p = <.007"),
+               threeparttable = TRUE, footnote_as_chunk = TRUE, fixed_small_size = T)
+
+  
+```
+
+```{r table-8, echo=FALSE, include=T,  warning=F, message=F}
+mod.res$sub$anx <- relocate(mod.res$sub$anx, mod, Level, K, SMD, ci, Q, I2)
+
+kable(mod.res$sub$anx, booktabs = TRUE, escape = FALSE, align = "l", longtable = TRUE,
+        caption = "subgroup (categorical) moderator analyses for anxiety outcomes.",
+        col.names = c("Moderator", "Level", "k", "d", "ci", "Q", "I2" )) %>%
+  kable_styling(full_width = F, font_size = 12) %>% 
+        column_spec(1, width = "6em") %>% column_spec(2, width = "6.5em") %>%
+        column_spec(3, width = "2em") %>% column_spec(4, width = "3em") %>%
+        column_spec(5, width = "6em") %>% column_spec(6, width = "5em") %>%
+        column_spec(7, width = "2em") %>%
+    collapse_rows(columns = 1, valign = "top", latex_hline = "none") %>%
+  #row_spec(c(0, 1:3, 7, 14:16, 20)) %>%
+        pack_rows(mod.res$sector$sum$anx, 1,2, italic = T, bold = T, background = "gray!6") %>%
+        pack_rows(mod.res$ITT$sum$anx, 5,6, italic = T, bold = F) %>%
+        pack_rows(mod.res$setting$sum$anx, 7,8, italic = T, bold = T, background = "gray!6") %>%
+        pack_rows(mod.res$cont$sum$anx, 9,10, italic = T,  bold = T) %>% 
+        pack_rows(mod.res$therapy$sum$anx, 14,15, italic = T, bold = T, background = "gray!6") %>% 
+        pack_rows(mod.res$hour$sum$anx, 18,19, italic = T, bold = F) %>% 
+        pack_rows(mod.res$train$sum$anx, 20,21, italic = T, bold = T, background = "gray!6")  %>%
+        pack_rows(mod.res$measures$sum$anx, 22,23, italic = T, bold = T, background = "gray!6")  %>%
+        pack_rows(mod.res$sample.n.group$sum$anx, 24,25, italic = T, bold = T, background = "gray!6")  %>%
+
+  footnote(general_title = "Note.",
+               general = c("Model Outputs in Bold are significant at either", "* p = <.05."),
+               threeparttable = TRUE, footnote_as_chunk = TRUE, fixed_small_size = T)
+
+```
+
+```{r table-9, echo=FALSE, include=T,  warning=F, message=F}
+mod.res$sub$gen <- relocate(mod.res$sub$gen, mod, Level, K, SMD, ci, Q, I2)
+
+kable(mod.res$sub$gen, booktabs = TRUE, escape = FALSE, align = "l", longtable = TRUE,
+        caption = "subgroup (categorical) moderator analyses for miscellaneous outcomes.",
+        col.names = c("Moderator", "Level", "k", "d", "ci", "Q", "I2" ))  %>%
+  kable_styling(full_width = F, font_size = 12) %>% 
+        column_spec(1, width = "6em") %>% column_spec(2, width = "6.5em") %>%
+        column_spec(3, width = "2em") %>% column_spec(4, width = "3em") %>%
+        column_spec(5, width = "6em") %>% column_spec(6, width = "5em") %>%
+        column_spec(7, width = "2em") %>%
+   collapse_rows(columns = 1, valign = "top") %>%
+  row_spec(c(0, 1:3, 7, 14:16, 20)) %>%
+        pack_rows(mod.res$sector$sum$gen, 1,2, italic = T, bold = T) %>%
+        pack_rows(mod.res$ITT$sum$gen, 5,6, italic = T, bold = F) %>%
+        pack_rows(mod.res$setting$sum$gen, 7,8, italic = T, bold = F) %>%
+        pack_rows(mod.res$cont$sum$gen, 9,10, italic = T,  bold = T) %>% 
+        pack_rows(mod.res$therapy$sum$gen, 14,15, italic = T, bold = T) %>% 
+        pack_rows(mod.res$hour$sum$gen, 18,19, italic = T, bold = F) %>% 
+        pack_rows(mod.res$train$sum$gen, 20,21, italic = T, bold = T)  %>%
+        pack_rows(mod.res$measures$sum$gen, 22,23, italic = T, bold = T)  %>%
+        pack_rows(mod.res$sample.n.group$sum$gen, 27,28, italic = T, bold = T)  %>%
+  footnote(general_title = "Note.",
+               general = c("Model Outputs in Bold are significant at either", "* p = <.05."),
+               threeparttable = TRUE, footnote_as_chunk = TRUE, fixed_small_size = T)
+  
+```
+
+```{r table-10, echo=FALSE, include=T,  warning=F, message=F}
+  kable(tabs$mod.reg, booktabs = TRUE, escape = TRUE,
+        align = c("l","l","l","c","c","c","l","c","c"),
+        col.names = c("Domain","Moderator","Mean (range)","k","B", "CI", "SE", "Q", "QMP", "R2"),
+        longtable = FALSE, caption = "Meta-regression moderator variables (continuous) for depresison, anxiety and general outcome domains.") %>% 
+    kable_styling(full_width = F, font_size = 10) %>%
+  column_spec(1, width = "4.25em", bold = T) %>%  column_spec(2, width = "11.75em")%>%
+  column_spec(3, width = "9.5em")%>% column_spec(4, width = "1.5em")%>%
+  column_spec(5, width = "3em")%>% column_spec(6, width = "5em")%>%
+  column_spec(7, width = "2em")%>% column_spec(8, width = "1.8em")%>%
+  column_spec(9, width = "1em")%>% column_spec(10, width = "1.7em")%>% 
+  row_spec(c(0,2,4,6,8,10,12,14,16), extra_latex_after = "\\rowcolor{gray!6}") %>%
+  collapse_rows(columns = 1, latex_hline = "major", valign = "top") %>%
+        footnote(general_title = "Note.",
+                 general = c("Model Outputs in Bold are significant at either",
+                           "* p = <.05."),
+               threeparttable = TRUE, footnote_as_chunk = TRUE, fixed_small_size = T)
+```
+
+
+
+
+
+

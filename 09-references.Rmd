@@ -1,0 +1,15 @@
+---
+editor_options:
+  markdown:
+    wrap: 72
+output: pdf_document
+---
+
+\newpage
+
+\addtocontents{toc}{\protect\newpage}
+# References {.unnumbered}
+
+<div id="refs"></div>
+
+

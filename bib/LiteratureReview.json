@@ -1,0 +1,2524 @@
+[
+	{
+		"id": "Sauer-Zavala2019",
+		"type": "article-journal",
+		"abstract": "Homeless individuals experience higher rates of mental illness than the general population, though this group is less likely to receive evidence-based psychological treatment for these difficulties. One explanation for this science-to-service gap may be that most empirically supported interventions are designed to address a single disorder, which may not map on to the substantial comorbidity present in safety-net samples, and create a high training burden for often underresourced clinicians who must learn multiple protocols to address the needs of their patients. One solution may be to prioritize the dissemination of transdiagnostic interventions that can reduce therapist burden and simultaneously address comorbid conditions. The purpose of the present article is to describe the process of conducting a pilot study administering the Unified Protocol (UP), a transdiagnostic treatment for the range of emotional disorders, at a community-based organization that provides health care and other services to homeless individuals and families in Boston, Massachusetts. Therapists on a specialized behavioral health unit received didactic training in the intervention, followed by weekly consultation while they provided the UP to patients on their caseload. Qualitative and quantitative data were collected from both patients and therapists. Barriers to use of the UP by therapists, as well as to conducting research in this setting, will be discussed, along with the solutions that were used. (PsycINFO Database Record (c) 2019 APA, all rights reserved).",
+		"archive_location": "rayyan-68229124",
+		"container-title": "Psychotherapy",
+		"DOI": "10.1037/pst0000187",
+		"issue": "1",
+		"note": "publisher-place: United States",
+		"page": "100-114",
+		"title": "Evaluating transdiagnostic, evidence-based mental health care in a safety-net setting serving homeless individuals.",
+		"URL": "http://ovidsp.ovid.com/ovidweb.cgi?T=JS&PAGE=reference&D=med16&NEWS=N&AN=30475054",
+		"volume": "56",
+		"author": [
+			{
+				"family": "Sauer-Zavala",
+				"given": "Shannon"
+			},
+			{
+				"family": "Ametaj",
+				"given": "Amantia A"
+			},
+			{
+				"family": "Wilner",
+				"given": "Julianne G"
+			},
+			{
+				"family": "Bentley",
+				"given": "Kate H"
+			},
+			{
+				"family": "Marquez",
+				"given": "Santiago"
+			},
+			{
+				"family": "Patrick",
+				"given": "Kaylie A"
+			},
+			{
+				"family": "Starks",
+				"given": "Billie"
+			},
+			{
+				"family": "Shtasel",
+				"given": "Derri"
+			},
+			{
+				"family": "Marques",
+				"given": "Luana"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "Minami2008",
+		"type": "article-journal",
+		"abstract": "This preliminary study evaluated the effectiveness of psychotherapy treatment for adult clinical depression provided in a natural setting by benchmarking the clinical outcomes in a managed care environment against effect size estimates observed in published clinical trials. Overall results suggest that effect size estimates of effectiveness in a managed care context were comparable to effect size estimates of efficacy observed in clinical trials. Relative to the 1-tailed 95th-percentile critical effect size estimates, effectiveness of treatment provided in this setting was observed to be between 80% (patients with comorbidity and without antidepressants) and 112% (patients without comorbidity concurrently on antidepressants) as compared to the benchmarks. Because the nature of the treatments delivered in the managed care environment were unknown, it was not possible to make conclusions about treatments. However, while replications are warranted, concerns that psychotherapy delivered in a naturalistic setting is inferior to treatments delivered in clinical trials appear unjustified.",
+		"archive_location": "rayyan-67165106",
+		"collection-title": "[Comment on: J Consult Clin Psychol. 2007 Apr;75(2):232-43; PMID: 17469881 [https://www.ncbi.nlm.nih.gov/pubmed/17469881]]",
+		"container-title": "Journal of consulting and clinical psychology",
+		"DOI": "10.1037/0022-006X.76.1.116",
+		"issue": "1",
+		"note": "publisher-place: United States",
+		"page": "116-124",
+		"title": "Benchmarking the effectiveness of psychotherapy treatment for adult depression in a managed care environment: a preliminary study.",
+		"URL": "http://ovidsp.ovid.com/ovidweb.cgi?T=JS&PAGE=reference&D=med7&NEWS=N&AN=18229989",
+		"volume": "76",
+		"author": [
+			{
+				"family": "Minami",
+				"given": "T"
+			},
+			{
+				"family": "Wampold",
+				"given": "Bruce E"
+			},
+			{
+				"family": "Serlin",
+				"given": "Ronald C"
+			},
+			{
+				"family": "Hamilton",
+				"given": "Eric G"
+			},
+			{
+				"family": "Brown",
+				"given": "George S Jeb"
+			},
+			{
+				"family": "Kircher",
+				"given": "John C"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008"
+				]
+			]
+		}
+	},
+	{
+		"id": "Buckley2006",
+		"type": "article-journal",
+		"abstract": "Objective. To compare the effect of clinician type on the outcome for adult mental health clients treated by trainee and qualiﬁed clinical psychologists. Design. Naturalistic, non-random between-participants group design: a group of 60 adult mental health out-patients treated by trainees and a matched group of 60 patients treated by qualiﬁed clinical psychologists.\nMethod. Participants completed a range of established measures at assessment and outcome of their treatment during routine clinical practice.\nResults. Signiﬁcant improvements in mental health were made for both groups from assessment to outcome; however, no signiﬁcant effect of clinician type was evident.\nConclusions. A variety of factors (e.g. quantity of supervision) contributing to trainee effectiveness are identiﬁed and discussed.",
+		"container-title": "Psychology and Psychotherapy: Theory, Research and Practice",
+		"DOI": "10.1348/147608305X52595",
+		"ISSN": "14760835",
+		"issue": "1",
+		"language": "en",
+		"page": "137-144",
+		"source": "DOI.org (Crossref)",
+		"title": "A naturalistic comparison of the effectiveness of trainee and qualified clinical psychologists",
+		"URL": "http://doi.wiley.com/10.1348/147608305X52595",
+		"volume": "79",
+		"author": [
+			{
+				"family": "Buckley",
+				"given": "Jessica V."
+			},
+			{
+				"family": "Newman",
+				"given": "David W."
+			},
+			{
+				"family": "Kellett",
+				"given": "Stephen"
+			},
+			{
+				"family": "Beail",
+				"given": "Nigel"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					12,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2006",
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "Nordmo2020",
+		"type": "article-journal",
+		"abstract": "Objective: This study investigates the effectiveness of open-ended psychotherapy in a large, naturalistic, and diverse patient cohort using rigorous and multifaceted assessments.\nMethod: Patients (N = 370) in open-ended psychotherapy completed an extensive set of self-report measures and diagnostic interviews, including long-term follow-up in order to assess stability of outcomes. About half of the patients qualiﬁed for a personality disorder at the onset of treatment. Treatments were open-ended, and on average therapists provided substantially larger treatment doses than common in the literature.\nResults: A substantial majority recovered from their respective Axis I (58%) and/or Axis II (55%) disorders during treatment. Patients also experienced large positive changes in selfreport measures of overall psychiatric symptoms and moderate positive changes in selfreported interpersonal problems, while very few (< 3%) demonstrated negative development. The patients maintained their diagnostic and self-assessed changes at a two-and-a-half-year follow-up. In contrast, self-reported occupational functioning showed minimal improvement throughout the treatment and follow-up phase.\nConclusion: A naturalistic patient cohort undergoing open-ended psychotherapy demonstrates substantial and stable improvements.",
+		"container-title": "Frontiers in Psychiatry",
+		"DOI": "10.3389/fpsyt.2020.00384",
+		"ISSN": "1664-0640",
+		"journalAbbreviation": "Front. Psychiatry",
+		"language": "en",
+		"page": "384",
+		"source": "DOI.org (Crossref)",
+		"title": "Effectiveness of open-ended psychotherapy under clinically representative conditions",
+		"URL": "https://www.frontiersin.org/article/10.3389/fpsyt.2020.00384/full",
+		"volume": "11",
+		"author": [
+			{
+				"family": "Nordmo",
+				"given": "Magnus"
+			},
+			{
+				"family": "Sønderland",
+				"given": "Nils Martin"
+			},
+			{
+				"family": "Havik",
+				"given": "Odd E."
+			},
+			{
+				"family": "Eilertsen",
+				"given": "Dag-Erik"
+			},
+			{
+				"family": "Monsen",
+				"given": "Jon T."
+			},
+			{
+				"family": "Solbakken",
+				"given": "Ole Andre"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					12,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					5,
+					20
+				]
+			]
+		}
+	},
+	{
+		"id": "Pybis2017",
+		"type": "article-journal",
+		"abstract": "Background: Cognitive Behaviour Therapy (CBT) is the front-line psychological intervention for step 3 within UK psychological therapy services. Counselling is recommended only when other interventions have failed and its effectiveness has been questioned.\nMethod: A secondary data analysis was conducted of data collected from 33,243 patients across 103 Improving Access to Psychological Therapies (IAPT) services as part of the second round of the National Audit of Psychological Therapies (NAPT). Initial analysis considered levels of pre-post therapy effect sizes (ESs) and reliable improvement (RI) and reliable and clinically significant improvement (RCSI). Multilevel modelling was used to model predictors of outcome, namely patient pre-post change on PHQ-9 scores at last therapy session.\nResults: Counselling received more referrals from patients experiencing moderate to severe depression than CBT. For patients scoring above the clinical cut-off on the PHQ-9 at intake, the pre-post ES (95% CI) for CBT was 1.59 (1. 58, 1.62) with 46.6% making RCSI criteria and for counselling the pre-post ES was 1.55 (1.52, 1.59) with 44.3% of patients meeting RCSI criteria. Multilevel modelling revealed a significant site effect of 1.8%, while therapy type was not a predictor of outcome. A significant interaction was found between the number of sessions attended and therapy type, with patients attending fewer sessions on average for counselling [M = 7.5 (5.54) sessions and a median (IQR) of 6 (3–10)] than CBT [M = 8.9 (6.34) sessions and a median (IQR) of 7 (4–12)]. Only where patients had 18 or 20 sessions was CBT significantly more effective than counselling, with recovery rates (95% CIs) of 62.2% (57.1, 66.9) and 62.4% (56.5, 68.0) respectively, compared with 44.4% (32.7, 56.6) and 42.6% (30.0, 55.9) for counselling. Counselling was significantly more effective at two sessions with a recovery rate of 34.9% (31.9, 37.9) compared with 22.2% (20.5, 24.0) for CBT.\nConclusions: Outcomes for counselling and CBT in the treatment of depression were comparable. Research efforts should focus on factors other than therapy type that may influence outcomes, namely the inherent variability between services, and adopt multilevel modelling as the given analytic approach in order to capture the naturally nested nature of the implementation and delivery of psychological therapies. It is of concern that half of all patients, regardless of type of intervention, did not show reliable improvement.",
+		"container-title": "BMC Psychiatry",
+		"DOI": "10.1186/s12888-017-1370-7",
+		"ISSN": "1471-244X",
+		"issue": "1",
+		"journalAbbreviation": "BMC Psychiatry",
+		"language": "en",
+		"page": "215",
+		"source": "DOI.org (Crossref)",
+		"title": "The comparative effectiveness and efficiency of cognitive behaviour therapy and generic counselling in the treatment of depression: evidence from the 2nd UK National Audit of psychological therapies",
+		"title-short": "The comparative effectiveness and efficiency of cognitive behaviour therapy and generic counselling in the treatment of depression",
+		"URL": "http://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-017-1370-7",
+		"volume": "17",
+		"author": [
+			{
+				"family": "Pybis",
+				"given": "Jo"
+			},
+			{
+				"family": "Saxon",
+				"given": "David"
+			},
+			{
+				"family": "Hill",
+				"given": "Andy"
+			},
+			{
+				"family": "Barkham",
+				"given": "Michael"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					12,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					12
+				]
+			]
+		}
+	},
+	{
+		"id": "Moher2009",
+		"type": "article-journal",
+		"abstract": "<p><b>David Moher and colleagues</b> introduce PRISMA, an update of the QUOROM guidelines for reporting systematic reviews and meta-analyses</p>",
+		"container-title": "BMJ",
+		"DOI": "10.1136/bmj.b2535",
+		"ISSN": "1756-1833",
+		"journalAbbreviation": "BMJ",
+		"language": "en",
+		"note": "publisher: British Medical Journal Publishing Group\nsection: Research Methods &amp; Reporting\nPMID: 19622551",
+		"page": "b2535",
+		"source": "www.bmj.com",
+		"title": "Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement",
+		"title-short": "Preferred reporting items for systematic reviews and meta-analyses",
+		"URL": "https://www.bmj.com/content/339/bmj.b2535",
+		"volume": "339",
+		"author": [
+			{
+				"family": "Moher",
+				"given": "David"
+			},
+			{
+				"family": "Liberati",
+				"given": "Alessandro"
+			},
+			{
+				"family": "Tetzlaff",
+				"given": "Jennifer"
+			},
+			{
+				"family": "Altman",
+				"given": "Douglas G."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2009",
+					7,
+					21
+				]
+			]
+		}
+	},
+	{
+		"id": "Ouzzani2016",
+		"type": "article-journal",
+		"abstract": "Synthesis of multiple randomized controlled trials (RCTs) in a systematic review can summarize the effects of individual outcomes and provide numerical answers about the effectiveness of interventions. Filtering of searches is time consuming, and no single method fulfills the principal requirements of speed with accuracy. Automation of systematic reviews is driven by a necessity to expedite the availability of current best evidence for policy and clinical decision-making.",
+		"container-title": "Systematic Reviews",
+		"DOI": "10.1186/s13643-016-0384-4",
+		"ISSN": "2046-4053",
+		"issue": "1",
+		"journalAbbreviation": "Systematic Reviews",
+		"page": "210",
+		"source": "BioMed Central",
+		"title": "Rayyan: a web and mobile app for systematic reviews",
+		"URL": "https://doi.org/10.1186/s13643-016-0384-4",
+		"volume": "5",
+		"author": [
+			{
+				"family": "Ouzzani",
+				"given": "Mourad"
+			},
+			{
+				"family": "Hammady",
+				"given": "Hossam"
+			},
+			{
+				"family": "Fedorowicz",
+				"given": "Zbys"
+			},
+			{
+				"family": "Elmagarmid",
+				"given": "Ahmed"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					12,
+					5
+				]
+			]
+		}
+	},
+	{
+		"id": "Landis1977",
+		"type": "article-journal",
+		"abstract": "This paper presents a general statistical methodology for the analysis of multivariate categorical data arising from observer reliability studies. The procedure essentially involves the construction of functions of the observed proportions which are directed at the extent to which the observers agree among themselves and the construction of test statistics for hypotheses involving these functions. Tests for interobserver bias are presented in terms of first-order marginal homogeneity and measures of interobserver agreement are developed as generalized kappa-type statistics. These procedures are illustrated with a clinical diagnosis example from the epidemiological literature.",
+		"container-title": "Biometrics",
+		"DOI": "10.2307/2529310",
+		"ISSN": "0006-341X",
+		"issue": "1",
+		"journalAbbreviation": "Biometrics",
+		"language": "eng",
+		"note": "PMID: 843571",
+		"page": "159-174",
+		"source": "PubMed",
+		"title": "The measurement of observer agreement for categorical data",
+		"volume": "33",
+		"author": [
+			{
+				"family": "Landis",
+				"given": "J. R."
+			},
+			{
+				"family": "Koch",
+				"given": "G. G."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1977",
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "Munn2020",
+		"type": "article-journal",
+		"container-title": "JBI Evidence Synthesis",
+		"DOI": "10.11124/JBISRIR-D-19-00099",
+		"ISSN": "2689-8381",
+		"issue": "10",
+		"language": "en",
+		"page": "2127-2133",
+		"source": "DOI.org (Crossref)",
+		"title": "Methodological quality of case series studies: an introduction to the JBI critical appraisal tool",
+		"title-short": "Methodological quality of case series studies",
+		"URL": "https://journals.lww.com/10.11124/JBISRIR-D-19-00099",
+		"volume": "18",
+		"author": [
+			{
+				"family": "Munn",
+				"given": "Zachary"
+			},
+			{
+				"family": "Barker",
+				"given": "Timothy Hugh"
+			},
+			{
+				"family": "Moola",
+				"given": "Sandeep"
+			},
+			{
+				"family": "Tufanaru",
+				"given": "Catalin"
+			},
+			{
+				"family": "Stern",
+				"given": "Cindy"
+			},
+			{
+				"family": "McArthur",
+				"given": "Alexa"
+			},
+			{
+				"family": "Stephenson",
+				"given": "Matthew"
+			},
+			{
+				"family": "Aromataris",
+				"given": "Edoardo"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "zotero-1966",
+		"type": "webpage",
+		"title": "GRADE: an emerging consensus on rating quality of evidence and strength of recommendations | The BMJ",
+		"URL": "https://www.bmj.com/content/336/7650/924",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "Guyatt2008",
+		"type": "article-journal",
+		"abstract": "<p>Guidelines are inconsistent in how they rate the quality of evidence and the strength of recommendations. This article explores the advantages of the GRADE system, which is increasingly being adopted by organisations worldwide </p>",
+		"container-title": "BMJ",
+		"DOI": "10.1136/bmj.39489.470347.AD",
+		"ISSN": "0959-8138, 1756-1833",
+		"issue": "7650",
+		"journalAbbreviation": "BMJ",
+		"language": "en",
+		"note": "publisher: British Medical Journal Publishing Group\nsection: Analysis\nPMID: 18436948",
+		"page": "924-926",
+		"source": "www.bmj.com",
+		"title": "GRADE: an emerging consensus on rating quality of evidence and strength of recommendations",
+		"title-short": "GRADE",
+		"URL": "https://www.bmj.com/content/336/7650/924",
+		"volume": "336",
+		"author": [
+			{
+				"family": "Guyatt",
+				"given": "Gordon H."
+			},
+			{
+				"family": "Oxman",
+				"given": "Andrew D."
+			},
+			{
+				"family": "Vist",
+				"given": "Gunn E."
+			},
+			{
+				"family": "Kunz",
+				"given": "Regina"
+			},
+			{
+				"family": "Falck-Ytter",
+				"given": "Yngve"
+			},
+			{
+				"family": "Alonso-Coello",
+				"given": "Pablo"
+			},
+			{
+				"family": "Schünemann",
+				"given": "Holger J."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2008",
+					4,
+					24
+				]
+			]
+		}
+	},
+	{
+		"id": "Guyatt2008a",
+		"type": "article-journal",
+		"container-title": "BMJ",
+		"DOI": "10.1136/bmj.39489.470347.AD",
+		"ISSN": "1756-1833",
+		"issue": "7650",
+		"journalAbbreviation": "BMJ",
+		"language": "eng",
+		"note": "PMID: 18436948\nPMCID: PMC2335261",
+		"page": "924-926",
+		"source": "PubMed",
+		"title": "GRADE: an emerging consensus on rating quality of evidence and strength of recommendations",
+		"title-short": "GRADE",
+		"volume": "336",
+		"author": [
+			{
+				"family": "Guyatt",
+				"given": "Gordon H."
+			},
+			{
+				"family": "Oxman",
+				"given": "Andrew D."
+			},
+			{
+				"family": "Vist",
+				"given": "Gunn E."
+			},
+			{
+				"family": "Kunz",
+				"given": "Regina"
+			},
+			{
+				"family": "Falck-Ytter",
+				"given": "Yngve"
+			},
+			{
+				"family": "Alonso-Coello",
+				"given": "Pablo"
+			},
+			{
+				"family": "Schünemann",
+				"given": "Holger J."
+			},
+			{
+				"literal": "GRADE Working Group"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2008",
+					4,
+					26
+				]
+			]
+		}
+	},
+	{
+		"id": "Cuijpers2017",
+		"type": "article-journal",
+		"abstract": "Aims The standardised mean difference (SMD) is one of the most used effect sizes to indicate the effects of treatments. It indicates the difference between a treatment and comparison group after treatment has ended, in terms of standard deviations. Some meta-analyses, including several highly cited and influential ones, use the pre-post SMD, indicating the difference between baseline and post-test within one (treatment group).\nMETHODS: In this paper, we argue that these pre-post SMDs should be avoided in meta-analyses and we describe the arguments why pre-post SMDs can result in biased outcomes.\nRESULTS: One important reason why pre-post SMDs should be avoided is that the scores on baseline and post-test are not independent of each other. The value for the correlation should be used in the calculation of the SMD, while this value is typically not known. We used data from an 'individual patient data' meta-analysis of trials comparing cognitive behaviour therapy and anti-depressive medication, to show that this problem can lead to considerable errors in the estimation of the SMDs. Another even more important reason why pre-post SMDs should be avoided in meta-analyses is that they are influenced by natural processes and characteristics of the patients and settings, and these cannot be discerned from the effects of the intervention. Between-group SMDs are much better because they control for such variables and these variables only affect the between group SMD when they are related to the effects of the intervention.\nCONCLUSIONS: We conclude that pre-post SMDs should be avoided in meta-analyses as using them probably results in biased outcomes.",
+		"container-title": "Epidemiology and Psychiatric Sciences",
+		"DOI": "10.1017/S2045796016000809",
+		"ISSN": "2045-7960",
+		"issue": "4",
+		"journalAbbreviation": "Epidemiol Psychiatr Sci",
+		"language": "eng",
+		"note": "PMID: 27790968\nPMCID: PMC6998624",
+		"page": "364-368",
+		"source": "PubMed",
+		"title": "Pre-post effect sizes should be avoided in meta-analyses",
+		"volume": "26",
+		"author": [
+			{
+				"family": "Cuijpers",
+				"given": "P."
+			},
+			{
+				"family": "Weitz",
+				"given": "E."
+			},
+			{
+				"family": "Cristea",
+				"given": "I. A."
+			},
+			{
+				"family": "Twisk",
+				"given": "J."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					8
+				]
+			]
+		}
+	},
+	{
+		"id": "zotero-1980",
+		"type": "webpage",
+		"abstract": "APA PsycNet DoiLanding page",
+		"language": "en",
+		"title": "Benchmarking the effectiveness of psychotherapy treatment for adult depression in a managed care environment: A preliminary study. - PsycNET",
+		"title-short": "Benchmarking the effectiveness of psychotherapy treatment for adult depression in a managed care environment",
+		"URL": "/doiLanding?doi=10.1037%2F0022-006X.76.1.116",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "zotero-1987",
+		"type": "webpage",
+		"title": "CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials | BMC Medicine | Full Text",
+		"URL": "https://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-8-18",
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "Schulz2010",
+		"type": "article-journal",
+		"abstract": "The CONSORT statement is used worldwide to improve the reporting of randomised controlled trials. Kenneth Schulz and colleagues describe the latest version, CONSORT 2010, which updates the reporting guideline based on new methodological evidence and accumulating experience.",
+		"container-title": "BMC Medicine",
+		"DOI": "10.1186/1741-7015-8-18",
+		"ISSN": "1741-7015",
+		"issue": "1",
+		"journalAbbreviation": "BMC Medicine",
+		"page": "18",
+		"source": "BioMed Central",
+		"title": "CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials",
+		"title-short": "CONSORT 2010 Statement",
+		"URL": "https://doi.org/10.1186/1741-7015-8-18",
+		"volume": "8",
+		"author": [
+			{
+				"family": "Schulz",
+				"given": "Kenneth F."
+			},
+			{
+				"family": "Altman",
+				"given": "Douglas G."
+			},
+			{
+				"family": "Moher",
+				"given": "David"
+			},
+			{
+				"literal": "the CONSORT Group"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2010",
+					3,
+					24
+				]
+			]
+		}
+	},
+	{
+		"id": "Jacobson1992",
+		"type": "chapter",
+		"abstract": "This reprinted article originally appeared in (Journal of Consulting and Clinical Psychology, 1991, 59[1], 12-19). (The following abstract of the original article appeared in record 1991-16094-001.) In 1984, N. S. Jacobson et al (see record 1985-00073-001) defined clinically significant change as the extent to which therapy moves someone outside the range of the dysfunctional population or within the range of the functional population. In the present article, ways of operationalizing this definition are described, and examples are used to show how clients can be categorized on the basis of this definition. A reliable change index (RC) is also proposed to determine whether the magnitude of change for a given client is statistically reliable. The inclusion of the RC leads to a twofold criterion for clinically significant change. (PsycInfo Database Record (c) 2020 APA, all rights reserved)",
+		"container-title": "Methodological issues & strategies in clinical research",
+		"event-place": "Washington, DC, US",
+		"ISBN": "978-1-55798-154-7",
+		"note": "DOI: 10.1037/10109-042",
+		"page": "631-648",
+		"publisher": "American Psychological Association",
+		"publisher-place": "Washington, DC, US",
+		"source": "APA PsycNET",
+		"title": "Clinical significance : A statistical approach to defining meaningful change in psychotherapy research",
+		"title-short": "Clinical significance",
+		"author": [
+			{
+				"family": "Jacobson",
+				"given": "Neil S."
+			},
+			{
+				"family": "Truax",
+				"given": "Paula"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1992"
+				]
+			]
+		}
+	},
+	{
+		"id": "Margison2000",
+		"type": "article-journal",
+		"abstract": "Background Measurement is the foundation of evidence-based practice. Advances in measurement procedures should extend to psychotherapy practice. Aims To review the developments in measurement relevantto psychotherapy.\nMethod Domains reviewed are: (a) interventions; (b) case formulation; (c) treatment integrity; (d) performance (including adherence, competence and skilfulness); (e) treatment definitions; (f ) therapeutic alliance; and (g) routine outcome measurement.\nResults Modern methods of measurement can support`evidencebased practice'for psychological treatments.They also support`practicebased evidence', a complementary paradigm to improve clinical effectiveness in routine practice via the infrastructure of Practice Research Networks (PRNs).\nConclusions Advances in measurement derived from psychotherapy research support a model of professional self-management (practice-based evidence) which is widely applicable in psychiatry and medicine.",
+		"container-title": "British Journal of Psychiatry",
+		"DOI": "10.1192/bjp.177.2.123",
+		"ISSN": "0007-1250, 1472-1465",
+		"issue": "2",
+		"journalAbbreviation": "Br J Psychiatry",
+		"language": "en",
+		"page": "123-130",
+		"source": "DOI.org (Crossref)",
+		"title": "Measurement and psychotherapy: Evidence-based practice and practice-based evidence",
+		"title-short": "Measurement and psychotherapy",
+		"URL": "https://www.cambridge.org/core/product/identifier/S0007125000155345/type/journal_article",
+		"volume": "177",
+		"author": [
+			{
+				"family": "Margison",
+				"given": "Frank R."
+			},
+			{
+				"family": "Barkham",
+				"given": "Michael"
+			},
+			{
+				"family": "Evans",
+				"given": "Chris"
+			},
+			{
+				"family": "McGrath",
+				"given": "Graeme"
+			},
+			{
+				"family": "Clark",
+				"given": "John Mellor"
+			},
+			{
+				"family": "Audin",
+				"given": "Kerry"
+			},
+			{
+				"family": "Connell",
+				"given": "Janice"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2000",
+					8
+				]
+			]
+		}
+	},
+	{
+		"id": "Wampold1997a",
+		"type": "article-journal",
+		"container-title": "Psychological Bulletin",
+		"DOI": "10.1037/0033-2909.122.3.203",
+		"ISSN": "1939-1455, 0033-2909",
+		"issue": "3",
+		"journalAbbreviation": "Psychological Bulletin",
+		"language": "en",
+		"page": "203-215",
+		"source": "DOI.org (Crossref)",
+		"title": "A meta-analysis of outcome studies comparing bona fide psychotherapies: Empiricially, \"all must have prizes.\"",
+		"title-short": "A meta-analysis of outcome studies comparing bona fide psychotherapies",
+		"URL": "http://doi.apa.org/getdoi.cfm?doi=10.1037/0033-2909.122.3.203",
+		"volume": "122",
+		"author": [
+			{
+				"family": "Wampold",
+				"given": "Bruce E."
+			},
+			{
+				"family": "Mondin",
+				"given": "Gregory W."
+			},
+			{
+				"family": "Moody",
+				"given": "Marcia"
+			},
+			{
+				"family": "Stich",
+				"given": "Frederick"
+			},
+			{
+				"family": "Benson",
+				"given": "Kurt"
+			},
+			{
+				"family": "Ahn",
+				"given": "Hyun-nie"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1997",
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "Roth1996",
+		"type": "book",
+		"call-number": "616.8914 (R)",
+		"event-place": "New York ; London",
+		"ISBN": "978-1-57230-125-2",
+		"language": "eng",
+		"publisher": "Guilford",
+		"publisher-place": "New York ; London",
+		"source": "find.shef.ac.uk",
+		"title": "What works for whom?: a critical review of psychotherapy research",
+		"title-short": "What works for whom?",
+		"author": [
+			{
+				"family": "Roth",
+				"given": "Anthony"
+			},
+			{
+				"family": "Fonagy",
+				"given": "Peter"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1996"
+				]
+			]
+		}
+	},
+	{
+		"id": "Nathan2000",
+		"type": "article-journal",
+		"container-title": "Psychological Bulletin",
+		"DOI": "10.1037/0033-2909.126.6.964",
+		"ISSN": "1939-1455, 0033-2909",
+		"issue": "6",
+		"journalAbbreviation": "Psychological Bulletin",
+		"language": "en",
+		"page": "964-981",
+		"source": "DOI.org (Crossref)",
+		"title": "Research on psychotherapy efficacy and effectiveness: Between Scylla and Charybdis?",
+		"title-short": "Research on psychotherapy efficacy and effectiveness",
+		"URL": "http://doi.apa.org/getdoi.cfm?doi=10.1037/0033-2909.126.6.964",
+		"volume": "126",
+		"author": [
+			{
+				"family": "Nathan",
+				"given": "Peter E."
+			},
+			{
+				"family": "Stuart",
+				"given": "Scott P."
+			},
+			{
+				"family": "Dolan",
+				"given": "Sara L."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2000"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/7296462/items/2EC6TZBX",
+		"type": "article",
+		"title": "Seligman95.pdf"
+	},
+	{
+		"id": "Seligman1995",
+		"type": "article-journal",
+		"abstract": "Consumer Reports (1995, November) published an article which concluded that patients benefitted very substantially from psychotherapy, that long-term treatment did considerably better than short-term treatment, and that psychotherapy alone did not differ in effectiveness from medication plus psychotherapy. Furthermore, no specific modality of psychotherapy did better than any other for any disorder; psychologists, psychiatrists, and social workers did not differ in their effectiveness as treaters; and all did better than marriage counselors and long-term family doctoring. Patients whose length of therapy or choice of therapist was limited by insurance or managed care did worse. The methodological virtues and drawbacks of this large-scale survey are examined and contrasted with the more traditional efficacy study, in which patients are randomized into a manualized, fixed duration treatment or into control groups. I conclude that the Consumer Reports survey complements the efficacy method, and that the best features of these two methods can be combined into a more ideal method that will best provide empirical validation of psychotherapy. (PsycINFO Database Record (c) 2020 APA, all rights reserved)",
+		"container-title": "American Psychologist",
+		"DOI": "10.1037/0003-066X.50.12.965",
+		"ISSN": "1935-990X(Electronic),0003-066X(Print)",
+		"issue": "12",
+		"note": "publisher-place: US\npublisher: American Psychological Association",
+		"page": "965-974",
+		"source": "APA PsycNET",
+		"title": "The effectiveness of psychotherapy: The Consumer Reports study",
+		"title-short": "The effectiveness of psychotherapy",
+		"volume": "50",
+		"author": [
+			{
+				"family": "Seligman",
+				"given": "Martin E. P."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1995"
+				]
+			]
+		}
+	},
+	{
+		"id": "Barkham2010a",
+		"type": "book",
+		"call-number": "616.8914 (D)",
+		"event-place": "Chichester, Oxford",
+		"ISBN": "978-0-470-03234-3",
+		"language": "eng",
+		"publisher": "Wiley-Blackwell",
+		"publisher-place": "Chichester, Oxford",
+		"source": "find.shef.ac.uk",
+		"title": "Developing and delivering practice-based evidence: a guide for the psychological therapies",
+		"title-short": "Developing and delivering practice-based evidence",
+		"URL": "http://www.vlebooks.com/vleweb/product/openreader?id=USheffield&isbn=9780470515907",
+		"author": [
+			{
+				"family": "Barkham",
+				"given": "Michael"
+			},
+			{
+				"family": "Hardy",
+				"given": "Gillian E."
+			},
+			{
+				"family": "Mellor-Clark",
+				"given": "John"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2010"
+				]
+			]
+		}
+	},
+	{
+		"id": "Stewart2009a",
+		"type": "article-journal",
+		"abstract": "The efficacy of cognitive– behavioral therapy (CBT) for anxiety in adults is well established. In the present study, the authors examined whether CBT tested under well-controlled conditions generalizes to less-controlled, real-world circumstances. Fifty-six effectiveness studies of CBT for adult anxiety disorders were located and synthesized. Meta-analytic effect sizes are presented for disorder-specific symptom measures as well as symptoms of generalized anxiety and depression for each disorder, and benchmarked to results from randomized controlled trials. All pretest–posttest effect sizes for disorderspecific symptom measures were large, suggesting that CBT for adult anxiety disorders is effective in clinically representative conditions. Six studies included a control group, and between-groups comparisons yielded large effect sizes for disorder-specific symptoms in favor of CBT. Benchmarking indicated that results from effectiveness studies were in the range of those obtained in selected efficacy trials. To test whether studies that are more representative of clinical settings have smaller effect sizes, the authors coded studies for 9 criteria for clinical representativeness. Results indicate an inverse relationship between clinical representativeness and outcome, but the magnitude of the relationship is quite small.",
+		"container-title": "Journal of Consulting and Clinical Psychology",
+		"DOI": "10.1037/a0016032",
+		"ISSN": "1939-2117, 0022-006X",
+		"issue": "4",
+		"journalAbbreviation": "Journal of Consulting and Clinical Psychology",
+		"language": "en",
+		"page": "595-606",
+		"source": "DOI.org (Crossref)",
+		"title": "Cognitive–behavioral therapy for adult anxiety disorders in clinical practice: A meta-analysis of effectiveness studies.",
+		"title-short": "Cognitive–behavioral therapy for adult anxiety disorders in clinical practice",
+		"URL": "http://doi.apa.org/getdoi.cfm?doi=10.1037/a0016032",
+		"volume": "77",
+		"author": [
+			{
+				"family": "Stewart",
+				"given": "Rebecca E."
+			},
+			{
+				"family": "Chambless",
+				"given": "Dianne L."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		}
+	},
+	{
+		"id": "Bower2010",
+		"type": "chapter",
+		"abstract": "This chapter contains sections titled: The nature of evidence-based practice The technology of evidence-based practice Key organizations involved in evidence-based practice The benefits of evidence-based practice Tensions in evidence-based practice Conclusions–evidence-based practice in perspective References",
+		"container-title": "Developing and Delivering Practice-Based Evidence",
+		"ISBN": "978-0-470-68799-4",
+		"language": "en",
+		"note": "section: 1\n_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9780470687994.ch1\nDOI: 10.1002/9780470687994.ch1",
+		"page": "1-20",
+		"publisher": "John Wiley & Sons, Ltd",
+		"source": "Wiley Online Library",
+		"title": "The current view of evidence and evidence-based practice",
+		"URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/9780470687994.ch1",
+		"author": [
+			{
+				"family": "Bower",
+				"given": "Peter"
+			},
+			{
+				"family": "Gilbody",
+				"given": "Simon"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2010"
+				]
+			]
+		}
+	},
+	{
+		"id": "Barkham2010b",
+		"type": "chapter",
+		"abstract": "This chapter contains sections titled: Introduction Towards an inclusive research strategy for building an evidence base Trials and tribulations Practice-based studies Conclusions Acknowledgements References",
+		"container-title": "Developing and Delivering Practice-Based Evidence",
+		"ISBN": "978-0-470-68799-4",
+		"language": "en",
+		"note": "section: 2\n_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9780470687994.ch2\nDOI: 10.1002/9780470687994.ch2",
+		"page": "21-61",
+		"publisher": "John Wiley & Sons, Ltd",
+		"source": "Wiley Online Library",
+		"title": "Building a rigorous and relevant knowledge base for the psychological therapies",
+		"URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/9780470687994.ch2",
+		"author": [
+			{
+				"family": "Barkham",
+				"given": "Michael"
+			},
+			{
+				"family": "Stiles",
+				"given": "William B."
+			},
+			{
+				"family": "Lambert",
+				"given": "Michael J."
+			},
+			{
+				"family": "Mellor‐Clark",
+				"given": "John"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2010"
+				]
+			]
+		}
+	},
+	{
+		"id": "Birtchnell1996",
+		"type": "article-journal",
+		"abstract": "//static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0007125000145131/resource/name/firstPage-S0007125000145131a.jpg",
+		"container-title": "The British Journal of Psychiatry",
+		"DOI": "10.1192/S0007125000145131",
+		"ISSN": "0007-1250, 1472-1465",
+		"issue": "1",
+		"language": "en",
+		"note": "publisher: Cambridge University Press",
+		"page": "120-120",
+		"source": "Cambridge University Press",
+		"title": "Research Foundations for Psychotherapy Practice. Edited by Mark Aveline and David Shapiro. Chichester: Wiley. 1995. 332 pp. £39.00 (hb).",
+		"title-short": "Research Foundations for Psychotherapy Practice. Edited by Mark Aveline and David Shapiro. Chichester",
+		"URL": "https://www.cambridge.org/core/journals/the-british-journal-of-psychiatry/article/abs/research-foundations-for-psychotherapy-practice-edited-by-mark-aveline-and-david-shapiro-chichester-wiley-1995-332-pp-3900-hb/37FC50456ADC151C2AC861FE9D554FF4",
+		"volume": "169",
+		"author": [
+			{
+				"family": "Birtchnell",
+				"given": "John"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1996",
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "Salkovskis1995",
+		"type": "chapter",
+		"container-title": "Research Foundations for Psychotherapy Practice",
+		"event-place": "Chichester",
+		"page": "191-228",
+		"publisher": "Wiley",
+		"publisher-place": "Chichester",
+		"title": "Demonstrating Specific Effects in Cognitive and Behavioural Therapy",
+		"author": [
+			{
+				"family": "Salkovskis",
+				"given": "Paul M."
+			}
+		],
+		"container-author": [
+			{
+				"family": "Aveline",
+				"given": "M"
+			},
+			{
+				"family": "Shapiro",
+				"given": "D A"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1995"
+				]
+			]
+		}
+	},
+	{
+		"id": "Calvert2014",
+		"type": "article-journal",
+		"abstract": "Purpose. This study reviews the quality of the extant outcome evidence for Cognitive Analytic Therapy (CAT) in order to inform decisions of when to use the model with patients and to stimulate a future CAT research strategy.\nMethod. An electronic search identified CAT efficacy and effectiveness studies and these were subject to systematic review. The methodological quality of studies meeting inclusion criteria were appraised using two validated research study quality checklists and studies were fitted to an established model of psychotherapy evaluation.\nResults. Twenty-five outcome studies met the inclusion criteria, including five randomised controlled trials. The CAT evidence-base is predominated by smallscale practice-based studies, in typically complex and severe clinical populations 44% were focal to the treatment of personality disorder. Whilst the quality of extant CAT evidence is generally sound (52% of studies were high quality), the depth and breadth of the evidence-base is currently limited. Where comparisons with other modalities were available, CAT appeared largely equivocal.\nConclusions. CAT is a popular and promising intervention for complex presentations. However, the evidence-base currently lacks wider credibility due to having largely bypassed the rigors of the controlled phase of the hourglass model of psychotherapy evaluation. There is a particular need for further CAT outcome research with common mental health problems. Practitioner points  CAT can be an effective intervention across a range of mental health difficulties  Consider a 24 session CAT contract for those patients presenting with complex and severe difficulties",
+		"container-title": "Psychology and Psychotherapy: Theory, Research and Practice",
+		"DOI": "10.1111/papt.12020",
+		"ISSN": "14760835",
+		"issue": "3",
+		"journalAbbreviation": "Psychol Psychother Theory Res Pract",
+		"language": "en",
+		"page": "253-277",
+		"source": "DOI.org (Crossref)",
+		"title": "Cognitive analytic therapy: A review of the outcome evidence base for treatment",
+		"title-short": "Cognitive analytic therapy",
+		"URL": "http://doi.wiley.com/10.1111/papt.12020",
+		"volume": "87",
+		"author": [
+			{
+				"family": "Calvert",
+				"given": "Rachel"
+			},
+			{
+				"family": "Kellett",
+				"given": "Stephen"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2014",
+					9
+				]
+			]
+		}
+	},
+	{
+		"id": "Lambert2013",
+		"type": "book",
+		"abstract": "Praise for Bergin and Garfield's Handbook of Psychotherapy and Behavior Change, Sixth Edition \"Not only is this a unique resource, it is the only book that all practitioners and researchers must read to ensure that they are in touch with the extraordinary advances that the field has made over the last years. Many of us have all five previous editions; the current volume is an essential addition to this growing, wonderful series.\" --Peter Fonagy, PhD, FBA, Freud Memorial Professor of Psychoanalysis and Head of the Research Department of Clinical, Educational and Health Psychology, University College London \"As either researcher or clinician living in the contemporary world of accountability, this invaluable edition of the Handbook is a must for one's professional library.\" --Marvin R. Goldfried, PhD, Distinguished Professor of Psychology, Stony Brook University The classic reference on psychotherapy--revised for the twenty-first century Keeping pace with the rapid changes that are taking place in the field, Bergin and Garfield's Handbook of Psychotherapy and Behavior Change, Sixth Edition endures as the most important overview of research findings in psychotherapy for professionals, academics, researchers, and students. This bestselling resource presents authoritative thinking on the pressing questions, issues, and controversies in psychotherapy research and practice today. Thorough and comprehensive, the new edition examines: New findings made possible by neuro-imaging and gene research Qualitative research designs and methods for understanding emotional problems Research in naturalistic settings that capitalizes on the curiosity of providers of services Practice-relevant findings, as well as methodological issues that will help direct future research",
+		"event-place": "New York, UNITED STATES",
+		"ISBN": "978-1-118-41868-0",
+		"publisher": "John Wiley & Sons, Incorporated",
+		"publisher-place": "New York, UNITED STATES",
+		"source": "ProQuest Ebook Central",
+		"title": "Bergin and Garfield's handbook of psychotherapy and behavior change",
+		"URL": "http://ebookcentral.proquest.com/lib/sheffield/detail.action?docID=1162080",
+		"editor": [
+			{
+				"family": "Lambert",
+				"given": "Michael J."
+			},
+			{
+				"family": "Bergin",
+				"given": "Allen E."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "Lambert2013a",
+		"type": "chapter",
+		"container-title": "Bergin and Garfield's handbook of psychotherapy and behavior change",
+		"event-place": "New York, UNITED STATES",
+		"ISBN": "978-1-118-41868-0",
+		"page": "169-218",
+		"publisher": "John Wiley & Sons, Incorporated",
+		"publisher-place": "New York, UNITED STATES",
+		"source": "ProQuest Ebook Central",
+		"title": "The efficacy and effectiveness of psychotherapy",
+		"URL": "http://ebookcentral.proquest.com/lib/sheffield/detail.action?docID=1162080",
+		"author": [
+			{
+				"family": "Lambert",
+				"given": "Michael J."
+			}
+		],
+		"editor": [
+			{
+				"family": "Lambert",
+				"given": "Michael J"
+			},
+			{
+				"family": "Bergin",
+				"given": "Allen E."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "Shadish1997a",
+		"type": "article-journal",
+		"abstract": "This article reports a secondary analysis of past therapy outcome meta-analysis. Fifteen meta-analysts provided effect sizes from 56 studies in previous reviews that met 1 of 3 increasingly stringent levels of criteria for clinical representativeness. The effect sizes were synthesized and compared with results from the original meta-analyses. Effect sizes from more clinically representative studies are the same size at all 3 criteria levels as in past meta-analyses. Almost no studies exist that meet the most stringent level of criteria. Results are interpreted cautiously because of controversy about what criteria best capture the notion of clinical representativeness, because so few experiments have tested therapy in clinical conditions, and because other models for exploring the generalizability of therapy outcome research to clinical conditions might yield different results. (PsycINFO Database Record (c) 2016 APA, all rights reserved)",
+		"container-title": "Journal of Consulting and Clinical Psychology",
+		"DOI": "10.1037/0022-006X.65.3.355",
+		"ISSN": "1939-2117(Electronic),0022-006X(Print)",
+		"issue": "3",
+		"note": "publisher-place: US\npublisher: American Psychological Association",
+		"page": "355-365",
+		"source": "APA PsycNET",
+		"title": "Evidence that therapy works in clincally representative conditions",
+		"volume": "65",
+		"author": [
+			{
+				"family": "Shadish",
+				"given": "William R."
+			},
+			{
+				"family": "Matt",
+				"given": "Georg E."
+			},
+			{
+				"family": "Navarro",
+				"given": "Ana M."
+			},
+			{
+				"family": "Siegle",
+				"given": "Greg"
+			},
+			{
+				"family": "Crits-Christoph",
+				"given": "Paul"
+			},
+			{
+				"family": "Hazelrigg",
+				"given": "Mark D."
+			},
+			{
+				"family": "Jorm",
+				"given": "Anthony F."
+			},
+			{
+				"family": "Lyons",
+				"given": "Larry C."
+			},
+			{
+				"family": "Nietzel",
+				"given": "Michael T."
+			},
+			{
+				"family": "Robinson",
+				"given": "Leslie"
+			},
+			{
+				"family": "Prout",
+				"given": "H. Thompson"
+			},
+			{
+				"family": "Smith",
+				"given": "Mary Lee"
+			},
+			{
+				"family": "Svartberg",
+				"given": "Martin"
+			},
+			{
+				"family": "Weiss",
+				"given": "Bahr"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1997"
+				]
+			]
+		}
+	},
+	{
+		"id": "Shadish2000",
+		"type": "article-journal",
+		"abstract": "Recently, concern has arisen that meta-analyses overestimate the effects of psychological therapies and that those therapies may not work under clinically representative conditions. This meta-analysis of 90 studies found that therapies are effective over a range of clinical representativeness. The projected effects of an ideal study of clinically representative therapy are similar to effect sizes in past meta-analyses. Effects increase with larger dose and when outcome measures are specific to treatment. Some clinically representative studies used self-selected treatment clients who were more distressed than available controls, and these quasi-experiments underestimated therapy effects. This study illustrates the joint use of fixed and random effects models, use of pretest effect sizes to study selection bias in quasi-experiments, and use of regression analysis to project results to an ideal study in the spirit of response surface modeling. (PsycINFO Database Record (c) 2016 APA, all rights reserved)",
+		"container-title": "Psychological Bulletin",
+		"DOI": "10.1037/0033-2909.126.4.512",
+		"ISSN": "1939-1455(Electronic),0033-2909(Print)",
+		"issue": "4",
+		"note": "publisher-place: US\npublisher: American Psychological Association",
+		"page": "512-529",
+		"source": "APA PsycNET",
+		"title": "The effects of psychological therapies under clinically representative conditions: A meta-analysis",
+		"title-short": "The effects of psychological therapies under clinically representative conditions",
+		"volume": "126",
+		"author": [
+			{
+				"family": "Shadish",
+				"given": "William R."
+			},
+			{
+				"family": "Navarro",
+				"given": "Ana M."
+			},
+			{
+				"family": "Matt",
+				"given": "Georg E."
+			},
+			{
+				"family": "Phillips",
+				"given": "Glenn"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2000"
+				]
+			]
+		}
+	},
+	{
+		"id": "Wakefield2020a",
+		"type": "article-journal",
+		"container-title": "British Journal of Clinical Psychology",
+		"DOI": "10.1111/bjc.12259",
+		"title": "Improving Access to Psychological Therapies (IAPT) in the United Kingdom: A systematic review and meta‐analysis of 10‐years of practice‐based evidence",
+		"URL": "https://bpspsychub.onlinelibrary.wiley.com/doi/full/10.1111/bjc.12259",
+		"author": [
+			{
+				"family": "Wakefield",
+				"given": "Sarah"
+			},
+			{
+				"family": "Kellett",
+				"given": "S"
+			},
+			{
+				"family": "Simmonds‐Buckley",
+				"given": "Melanie"
+			},
+			{
+				"family": "Stockton",
+				"given": "Daniel"
+			},
+			{
+				"family": "Bradbury",
+				"given": "Abigail"
+			},
+			{
+				"family": "Delgadillo",
+				"given": "Jaime"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "Fluckiger2020",
+		"type": "article-journal",
+		"container-title": "Psychotherapy and Psychosomatics",
+		"DOI": "10.1159/000507793",
+		"ISSN": "0033-3190, 1423-0348",
+		"issue": "5",
+		"journalAbbreviation": "Psychother Psychosom",
+		"language": "en",
+		"page": "333-335",
+		"source": "DOI.org (Crossref)",
+		"title": "Is there an evidence-based number of sessions in outpatient psychotherapy? – A comparison of naturalistic conditions across countries",
+		"title-short": "Is There an Evidence-Based Number of Sessions in Outpatient Psychotherapy?",
+		"URL": "https://www.karger.com/Article/FullText/507793",
+		"volume": "89",
+		"author": [
+			{
+				"family": "Flückiger",
+				"given": "Christoph"
+			},
+			{
+				"family": "Wampold",
+				"given": "Bruce E."
+			},
+			{
+				"family": "Delgadillo",
+				"given": "Jaime"
+			},
+			{
+				"family": "Rubel",
+				"given": "Julian"
+			},
+			{
+				"family": "Vîslă",
+				"given": "Andreea"
+			},
+			{
+				"family": "Lutz",
+				"given": "Wolfgang"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "Hunsley2007",
+		"type": "article-journal",
+		"abstract": "To examine whether the results of effectiveness studies match those obtained for efficacy studies on the same treatments, we conducted a focused review of the published treatment effectiveness literature. A literature search yielded 35 effectiveness studies for adult disorders (N ϭ 21) and child and adolescent disorders (N ϭ 14). A comparison of data from these studies with benchmarks from recent reviews of efficacy trials revealed treatment completion rates comparable with those found in the efficacy benchmarks. The improvement rates were comparable in effectiveness studies with those reported in randomized clinical trials of treatment efficacy. Despite methodological limitations in many effectiveness studies, these initial data provide encouraging support for the transportability to clinical settings of treatments with established efficacy.",
+		"container-title": "Professional Psychology: Research and Practice",
+		"DOI": "10.1037/0735-7028.38.1.21",
+		"ISSN": "1939-1323, 0735-7028",
+		"issue": "1",
+		"journalAbbreviation": "Professional Psychology: Research and Practice",
+		"language": "en",
+		"page": "21-33",
+		"source": "DOI.org (Crossref)",
+		"title": "Research-informed benchmarks for psychological treatments: Efficacy studies, effectiveness studies, and beyond.",
+		"title-short": "Research-informed benchmarks for psychological treatments",
+		"URL": "http://doi.apa.org/getdoi.cfm?doi=10.1037/0735-7028.38.1.21",
+		"volume": "38",
+		"author": [
+			{
+				"family": "Hunsley",
+				"given": "John"
+			},
+			{
+				"family": "Lee",
+				"given": "Catherine M."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					19
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2007"
+				]
+			]
+		}
+	},
+	{
+		"id": "Thimm2014",
+		"type": "article-journal",
+		"abstract": "Previous research has shown that cognitive- behavioral group therapy (group CBT) is an effective treatment for depression. However, the effectiveness of this approach in routine care needs more research. The current study retrospectively examines the outcomes of patients who received group CBT for depression at a psychiatric outpatient clinic between 2003 and 2013.",
+		"container-title": "BMC Psychiatry",
+		"DOI": "10.1186/s12888-014-0292-x",
+		"ISSN": "1471-244X",
+		"issue": "1",
+		"journalAbbreviation": "BMC Psychiatry",
+		"page": "292",
+		"source": "BioMed Central",
+		"title": "Effectiveness of cognitive behavioral group therapy for depression in routine practice",
+		"URL": "https://doi.org/10.1186/s12888-014-0292-x",
+		"volume": "14",
+		"author": [
+			{
+				"family": "Thimm",
+				"given": "Jens C."
+			},
+			{
+				"family": "Antonsen",
+				"given": "Liss"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2014",
+					10,
+					21
+				]
+			]
+		}
+	},
+	{
+		"id": "Fergusson2002",
+		"type": "article-journal",
+		"abstract": "<p><i>When is it legitimate to exclude randomised patients from the analysis of data in clinical trials? Basing their analysis on the desirability of minimising bias and random error, the authors consider the circumstances when it may be possible to exclude patients, even in an intention to treat trial</i></p>",
+		"container-title": "BMJ",
+		"DOI": "10.1136/bmj.325.7365.652",
+		"ISSN": "0959-8138, 1468-5833",
+		"issue": "7365",
+		"journalAbbreviation": "BMJ",
+		"language": "en",
+		"note": "publisher: British Medical Journal Publishing Group\nsection: Education and debate\nPMID: 12242181",
+		"page": "652-654",
+		"source": "www.bmj.com",
+		"title": "Post-randomisation exclusions: the intention to treat principle and excluding patients from analysis",
+		"title-short": "Post-randomisation exclusions",
+		"URL": "https://www.bmj.com/content/325/7365/652",
+		"volume": "325",
+		"author": [
+			{
+				"family": "Fergusson",
+				"given": "Dean"
+			},
+			{
+				"family": "Aaron",
+				"given": "Shawn D."
+			},
+			{
+				"family": "Guyatt",
+				"given": "Gordon"
+			},
+			{
+				"family": "Hébert",
+				"given": "Paul"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2002",
+					9,
+					21
+				]
+			]
+		}
+	},
+	{
+		"id": "Hans2013",
+		"type": "article-journal",
+		"container-title": "Journal of Consulting and Clinical Psychology",
+		"DOI": "10.1037/a0031080",
+		"ISSN": "1939-2117, 0022-006X",
+		"issue": "1",
+		"journalAbbreviation": "Journal of Consulting and Clinical Psychology",
+		"language": "en",
+		"page": "75-88",
+		"source": "DOI.org (Crossref)",
+		"title": "Effectiveness of and dropout from outpatient cognitive behavioral therapy for adult unipolar depression: A meta-analysis of nonrandomized effectiveness studies.",
+		"title-short": "Effectiveness of and dropout from outpatient cognitive behavioral therapy for adult unipolar depression",
+		"URL": "http://doi.apa.org/getdoi.cfm?doi=10.1037/a0031080",
+		"volume": "81",
+		"author": [
+			{
+				"family": "Hans",
+				"given": "Eva"
+			},
+			{
+				"family": "Hiller",
+				"given": "Wolfgang"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	},
+	{
+		"id": "Hansen2002",
+		"type": "article-journal",
+		"abstract": "To date, few studies have been published on the dose-response relationship, but there is general consensus that between 13 and 18 sessions of therapy are required for 50% of patients to improve. Reviewing the clinical trials literature reveals that in carefully controlled and implemented treatments, between 57.6% and 67.2% of patients improve within an average of 12.7 sessions. Using naturalistic data, however, revealed that the average number of sessions received in a national database of over 6,000 patients was less than five. The rate of improvement in this sample was only about 20%. These results suggest that patients, on average, do not get adequate exposure to psychotherapy, nor do they recover from illness at rates observed in clinical trials research.",
+		"container-title": "Clinical Psychology: Science and Practice",
+		"DOI": "https://doi.org/10.1093/clipsy.9.3.329",
+		"ISSN": "1468-2850",
+		"issue": "3",
+		"language": "en",
+		"note": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1093/clipsy.9.3.329",
+		"page": "329-343",
+		"source": "Wiley Online Library",
+		"title": "The Psychotherapy Dose-Response Effect and Its Implications for Treatment Delivery Services",
+		"URL": "https://onlinelibrary.wiley.com/doi/abs/10.1093/clipsy.9.3.329",
+		"volume": "9",
+		"author": [
+			{
+				"family": "Hansen",
+				"given": "Nathan B."
+			},
+			{
+				"family": "Lambert",
+				"given": "Michael J."
+			},
+			{
+				"family": "Forman",
+				"given": "Evan M."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2002"
+				]
+			]
+		}
+	},
+	{
+		"id": "Firth2020",
+		"type": "article-journal",
+		"abstract": "Psychological intervention outcomes depend in part on the therapist who provides the intervention (a therapist effect). However, recent reviews suggest that therapist effects may vary as a function of the context in which care is provided and therefore should not be generalized beyond that context. This study statistically analysed therapist effect differences between care sectors delivering psychological interventions. The sample comprised routine clinical data from 26,814 patients (69% female; mean age 38) and 466 therapists in five care sectors: primary care, secondary care, university, voluntary, and workplace. Therapist effects were analysed using multilevel models and Markov chain Monte Carlo credible intervals. The therapist effect was significantly larger in primary care (8.4%) than in any other sector (1.1%–2.3%) except secondary care (4.1%), after controlling for explanatory baseline and process variables as well as accounting for differences between clinics. There were no other significant differences detected between care sectors. These findings support the hypothesis that differences in effectiveness between therapists vary depending on the context in which psychological treatment is provided. Differences in relative therapist impact can vary by a factor of 4–8 across treatment sectors. This should be considered in the application of research evidence, treatment planning, and the design and delivery of psychological care provision.",
+		"container-title": "Clinical Psychology & Psychotherapy",
+		"DOI": "https://doi.org/10.1002/cpp.2461",
+		"ISSN": "1099-0879",
+		"issue": "5",
+		"language": "en",
+		"note": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpp.2461",
+		"page": "770-778",
+		"source": "Wiley Online Library",
+		"title": "Therapist effects vary significantly across psychological treatment care sectors",
+		"URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/cpp.2461",
+		"volume": "27",
+		"author": [
+			{
+				"family": "Firth",
+				"given": "Nick"
+			},
+			{
+				"family": "Saxon",
+				"given": "David"
+			},
+			{
+				"family": "Stiles",
+				"given": "William B."
+			},
+			{
+				"family": "Barkham",
+				"given": "Michael"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "Smith1977",
+		"type": "article-journal",
+		"abstract": "Results of 375 controlled evaluations of psychotherapy and counseling were coded and integrated statistically. The findings provide convincing evidence of the efficacy of psychotherapy. On the average, the typical therapy client is better off than 75% of untreated individuals. Few important differences in effectiveness could be established among many quite different types of psychotherapy. More generally, virtually no difference in effectiveness was observed between the class of all behavioral therapies (e.g., systematic desensitization and behavior modification) and the nonbehavioral therapies (e.g., Rogerian, psychodynamic, rational-emotive, and transactional analysis). (PsycINFO Database Record (c) 2016 APA, all rights reserved)",
+		"container-title": "American Psychologist",
+		"DOI": "10.1037/0003-066X.32.9.752",
+		"ISSN": "1935-990X(Electronic),0003-066X(Print)",
+		"issue": "9",
+		"note": "publisher-place: US\npublisher: American Psychological Association",
+		"page": "752-760",
+		"source": "APA PsycNET",
+		"title": "Meta-analysis of psychotherapy outcome studies",
+		"volume": "32",
+		"author": [
+			{
+				"family": "Smith",
+				"given": "Mary L."
+			},
+			{
+				"family": "Glass",
+				"given": "Gene V."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1977"
+				]
+			]
+		}
+	},
+	{
+		"id": "Sue1994",
+		"type": "article-journal",
+		"abstract": "[analyze] research on psychotherapy with ethnic minority clients (i.e., African-Americans, American Indians, Asian-Americans, and Latino-Americans) / considerable controversy has existed for the past three decades over the effectiveness of traditional psychotherapeutic approaches for . . . ethnic minority clients / what evidence is there for the efficacy of psychotherapy / what are the conditions that promote effectiveness / engage in a critical analysis of ethnic research, pointing to methodological and conceptual problems and the need for more knowledge (PsycINFO Database Record (c) 2012 APA, all rights reserved)",
+		"container-title": "Handbook of Psychotherapy and Behavior Change",
+		"journalAbbreviation": "Handbook of Psychotherapy and Behavior Change",
+		"source": "ResearchGate",
+		"title": "Research on Psychotherapy with Culturally Diverse Populations",
+		"volume": "4",
+		"author": [
+			{
+				"family": "Sue",
+				"given": "Stanley"
+			},
+			{
+				"family": "Zane",
+				"given": "Nolan"
+			},
+			{
+				"family": "Young",
+				"given": "Kathleen"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1994",
+					1,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "Cahill2010",
+		"type": "article-journal",
+		"abstract": "PURPOSE: To review the published material on practice-based research and to compare results with benchmarks derived from efficacy studies.\nMETHODS: Electronic and manual searches were carried out up to and including 2008. Studies were screened for content relevance and selected according to specified inclusion criteria. Data were extracted from all studies that met criteria and were quality assessed using an adapted version of a checklist designed for the appraisal of both randomized and non-randomized studies of health care interventions. Studies were synthesized according to (1) the type of problem being treated and (2) study design using descriptive and meta-analytic methods where appropriate.\nRESULTS: Psychological treatment conducted in routine clinic settings is effective for a range of client problems, particularly common mental health problems (uncontrolled effect size = 1.29; 95% CI = 1.26-1.33, N = 10,842). When benchmarked against data from efficacy studies, practice-based studies yielded effect sizes that fell short of the selected benchmark. In contrast, the practice-based studies achieved the benchmark for percentage of clients meeting a stringent criterion for recovery.\nCONCLUSIONS: Clients receiving treatment as normally delivered within routine practice report significant relief of symptoms. However, the result of comparisons with efficacy benchmarks is dependent on the outcome index used. Notwithstanding this, substantive factors are also likely to contribute. Therefore, in addition to attending to methodological issues, further work is required to understand the relative contribution of these factors.",
+		"container-title": "The British Journal of Clinical Psychology",
+		"DOI": "10.1348/014466509X470789",
+		"ISSN": "0144-6657",
+		"issue": "4",
+		"journalAbbreviation": "Br J Clin Psychol",
+		"language": "eng",
+		"note": "PMID: 19799803",
+		"page": "421-453",
+		"source": "PubMed",
+		"title": "Systematic review of practice-based research on psychological therapies in routine clinic settings",
+		"volume": "49",
+		"author": [
+			{
+				"family": "Cahill",
+				"given": "Jane"
+			},
+			{
+				"family": "Barkham",
+				"given": "Michael"
+			},
+			{
+				"family": "Stiles",
+				"given": "William"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2010",
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "Jacobson1996a",
+		"type": "article-journal",
+		"abstract": "Although there has been much discussion of the recent Consumer Reports (CR) study (1995) on the effectiveness of psychotherapy, there is little new information reported either in the CR article or in M. E. P. Seligman's (1995) discussion of the findings. The findings that are new are hard to interpret because of serious methodological problems. In fact, the CR study is similar in many ways to H. J. Eysenck's (1952) controversial report on the effectiveness of psychotherapy, a study that has been rejected by the field despite the fact that it avoided some of the methodological shortcomings of the CR study. It would be a mistake to put forth a design rejected in the 1950s as an exemplar of good effectiveness research, especially when better alternatives exist. Clinical trials, despite many limitations, can answer all of the questions regarding the effectiveness of psychotherapy posed by M. E. P. Seligman, without the interpretive ambiguities and other methodological problems inherent in surveys such as the one published in CR.",
+		"container-title": "The American Psychologist",
+		"DOI": "10.1037/0003-066X.51.10.1031",
+		"ISSN": "0003-066X",
+		"issue": "10",
+		"journalAbbreviation": "Am Psychol",
+		"language": "eng",
+		"note": "PMID: 8870540",
+		"page": "1031-1039",
+		"source": "PubMed",
+		"title": "Studying the effectiveness of psychotherapy. How well can clinical trials do the job?",
+		"volume": "51",
+		"author": [
+			{
+				"family": "Jacobson",
+				"given": "Neil S."
+			},
+			{
+				"family": "Christensen",
+				"given": "A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1996",
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "Cohen1960",
+		"type": "article-journal",
+		"container-title": "Educational and Psychological Measurement",
+		"DOI": "10.1177/001316446002000104",
+		"ISSN": "0013-1644",
+		"issue": "1",
+		"journalAbbreviation": "Educational and Psychological Measurement",
+		"language": "en",
+		"note": "publisher: SAGE Publications Inc",
+		"page": "37-46",
+		"source": "SAGE Journals",
+		"title": "A Coefficient of Agreement for Nominal Scales",
+		"URL": "https://doi.org/10.1177/001316446002000104",
+		"volume": "20",
+		"author": [
+			{
+				"family": "Cohen",
+				"given": "Jacob"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					30
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1960",
+					4,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "Cohen1988",
+		"type": "book",
+		"call-number": "HA29 .C66 1988",
+		"edition": "2nd ed",
+		"event-place": "Hillsdale, N.J",
+		"ISBN": "978-0-8058-0283-2",
+		"language": "en",
+		"number-of-pages": "567",
+		"publisher": "L. Erlbaum Associates",
+		"publisher-place": "Hillsdale, N.J",
+		"source": "Library of Congress ISBN",
+		"title": "Statistical power analysis for the behavioral sciences",
+		"author": [
+			{
+				"family": "Cohen",
+				"given": "Jacob"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1988"
+				]
+			]
+		}
+	},
+	{
+		"id": "Balk2012",
+		"type": "book",
+		"abstract": "To better understand how to impute within-arm correlation for meta-analyses of continuous outcomes when data are missing, this study describes the range of correlation values in a representative set of studies with sufficient data reported, and simulates the effect of using different correlation values on meta-analysis summary estimates when imputing missing data., It is common that studies do not report sufficient data to allow meta-analysis of continuous outcomes. The standard error (SE) of the within-group differences is often not reported and cannot be calculated because the within-group correlation is unknown. For meta-analysis of net-changes, one must thus estimate the SE based on an arbitrarily chosen correlation., From articles available to us from previous systematic reviews and from trials registered at ClinicalTrials.gov, we selected those that prospectively compared two or more interventions for continuous outcomes and reported all three of: baseline means and SEs (or equivalent), final means and SEs, and within-group changes and SEs. From these data we back-calculated correlation values for each study group. We described these data and tested for patterns based on study characteristics. We assessed the bias on estimates of within-group change SEs by comparing reported SEs with imputed SEs using arbitrarily chosen correlation values. We simulated meta-analyses, assessing the bias, coverage, and accuracy of the summary estimates derived from studies with missing correlation data., We analyzed 811 within-group correlation values from 123 studies with 281 study groups. The median (interquartile range) within-group correlation values across all studies was 0.59 (0.40, 0.81). Active treatment groups had lower correlation values (median 0.54) than no treatment groups (median 0.73, P<0.001). There was heterogeneity of correlation values across both outcome types and clinical domains. There was no apparent association with followup duration, but correlation values were lower with increasing sample size among no treatment groups. In the empiric dataset, imputing low correlation values (0 or 0.25) yielded an overestimation of the within-group SE in more than 85 percent of cases; imputing a correlation of 0.5 yielded values closer to those actually reported. Imputation had similar effects on the net-change SE. Simulation studies informed by the empirical results, demonstrated that imputation of values does not introduce bias in the meta-analysis estimate. Imputing values higher than the true correlation resulted in coverage probabilities that were lower than those in analyses using the complete data. However, coverage probabilities were generally lower than nominal (<0.95 even with complete data) in the presence of moderate to substantial between study heterogeneity, despite using random effects models (DerSimonian-Laird)., Negative within-group correlation values are very uncommon in clinical studies. Imputing values in meta-analyses where some or all within-group correlation estimates are not reported does not introduce bias in the summary estimate of the treatment effect. However, imputation can affect the SE of the summary estimate when the imputed value is different from the “true.” In such cases, sensitivity analyses using alternative imputation values, possibly informed by studies reporting relevant information, are recommended.",
+		"call-number": "NBK115797",
+		"collection-title": "AHRQ Methods for Effective Health Care",
+		"event-place": "Rockville (MD)",
+		"language": "eng",
+		"note": "PMID: 23326900",
+		"publisher": "Agency for Healthcare Research and Quality (US)",
+		"publisher-place": "Rockville (MD)",
+		"source": "PubMed",
+		"title": "Empirical Assessment of Within-Arm Correlation Imputation in Trials of Continuous Outcomes",
+		"URL": "http://www.ncbi.nlm.nih.gov/books/NBK115797/",
+		"author": [
+			{
+				"family": "Balk",
+				"given": "Ethan M."
+			},
+			{
+				"family": "Earley",
+				"given": "Amy"
+			},
+			{
+				"family": "Patel",
+				"given": "Kamal"
+			},
+			{
+				"family": "Trikalinos",
+				"given": "Thomas A."
+			},
+			{
+				"family": "Dahabreh",
+				"given": "Issa J."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+	{
+		"id": "Higgins2002",
+		"type": "article-journal",
+		"abstract": "The extent of heterogeneity in a meta-analysis partly determines the difficulty in drawing overall conclusions. This extent may be measured by estimating a between-study variance, but interpretation is then specific to a particular treatment effect metric. A test for the existence of heterogeneity exists, but depends on the number of studies in the meta-analysis. We develop measures of the impact of heterogeneity on a meta-analysis, from mathematical criteria, that are independent of the number of studies and the treatment effect metric. We derive and propose three suitable statistics: H is the square root of the χ2 heterogeneity statistic divided by its degrees of freedom; R is the ratio of the standard error of the underlying mean from a random effects meta-analysis to the standard error of a fixed effect meta-analytic estimate, and I2 is a transformation of H that describes the proportion of total variation in study estimates that is due to heterogeneity. We discuss interpretation, interval estimates and other properties of these measures and examine them in five example data sets showing different amounts of heterogeneity. We conclude that H and I2, which can usually be calculated for published meta-analyses, are particularly useful summaries of the impact of heterogeneity. One or both should be presented in published meta-analyses in preference to the test for heterogeneity. Copyright © 2002 John Wiley & Sons, Ltd.",
+		"container-title": "Statistics in Medicine",
+		"DOI": "https://doi.org/10.1002/sim.1186",
+		"ISSN": "1097-0258",
+		"issue": "11",
+		"language": "en",
+		"note": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sim.1186",
+		"page": "1539-1558",
+		"source": "Wiley Online Library",
+		"title": "Quantifying heterogeneity in a meta-analysis",
+		"URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/sim.1186",
+		"volume": "21",
+		"author": [
+			{
+				"family": "Higgins",
+				"given": "Julian P. T."
+			},
+			{
+				"family": "Thompson",
+				"given": "Simon G."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2002"
+				]
+			]
+		}
+	},
+	{
+		"id": "Higgins2003",
+		"type": "article-journal",
+		"abstract": "Cochrane Reviews have recently started including the quantity I 2 to help readers assess the consistency of the results of studies in meta-analyses. What does this new quantity mean, and why is assessment of heterogeneity so important to clinical practice? \n\nSystematic reviews and meta-analyses can provide convincing and reliable evidence relevant to many aspects of medicine and health care.1 Their value is especially clear when the results of the studies they include show clinically important effects of similar magnitude. However, the conclusions are less clear when the included studies have differing results. In an attempt to establish whether studies are consistent, reports of meta-analyses commonly present a statistical test of heterogeneity. The test seeks to determine whether there are genuine differences underlying the results of the studies (heterogeneity), or whether the variation in findings is compatible with chance alone (homogeneity). However, the test is susceptible to the number of trials included in the meta-analysis. We have developed a new quantity, I 2, which we believe gives a better measure of the consistency between trials in a meta-analysis.\n\nAssessment of the consistency of effects across studies is an essential part of meta-analysis. Unless we know how consistent the results of studies are, we cannot determine the generalisability of the findings of the meta-analysis. Indeed, several hierarchical systems for grading evidence state that the results of studies must be consistent or homogeneous to obtain the highest grading.2–4\n\nTests for heterogeneity are commonly used to decide on methods for combining studies and for concluding consistency or inconsistency of findings.5 6 But what does the test achieve in practice, and how should the resulting P values be interpreted?\n\nA test for heterogeneity examines the null hypothesis that all studies are evaluating the same effect. The usual test statistic …",
+		"container-title": "BMJ",
+		"DOI": "10.1136/bmj.327.7414.557",
+		"ISSN": "0959-8138, 1468-5833",
+		"issue": "7414",
+		"journalAbbreviation": "BMJ",
+		"language": "en",
+		"note": "publisher: British Medical Journal Publishing Group\nsection: Education and debate\nPMID: 12958120",
+		"page": "557-560",
+		"source": "www.bmj.com",
+		"title": "Measuring inconsistency in meta-analyses",
+		"URL": "https://www.bmj.com/content/327/7414/557",
+		"volume": "327",
+		"author": [
+			{
+				"family": "Higgins",
+				"given": "Julian P. T."
+			},
+			{
+				"family": "Thompson",
+				"given": "Simon G."
+			},
+			{
+				"family": "Deeks",
+				"given": "Jonathan J."
+			},
+			{
+				"family": "Altman",
+				"given": "Douglas G."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2003",
+					9,
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "Cochran1954",
+		"type": "article-journal",
+		"container-title": "Biometrics",
+		"DOI": "10.2307/3001666",
+		"ISSN": "0006-341X",
+		"issue": "1",
+		"note": "publisher: [Wiley, International Biometric Society]",
+		"page": "101-129",
+		"source": "JSTOR",
+		"title": "The Combination of Estimates from Different Experiments",
+		"URL": "https://www.jstor.org/stable/3001666",
+		"volume": "10",
+		"author": [
+			{
+				"family": "Cochran",
+				"given": "William G."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1954"
+				]
+			]
+		}
+	},
+	{
+		"id": "Begg1994",
+		"type": "article-journal",
+		"abstract": "An adjusted rank correlation test is proposed as a technique for identifying publication bias in a meta-analysis, and its operating characteristics are evaluated via simulations. The test statistic is a direct statistical analogue of the popular \"funnel-graph.\" The number of component studies in the meta-analysis, the nature of the selection mechanism, the range of variances of the effect size estimates, and the true underlying effect size are all observed to be influential in determining the power of the test. The test is fairly powerful for large meta-analyses with 75 component studies, but has only moderate power for meta-analyses with 25 component studies. However, in many of the configurations in which there is low power, there is also relatively little bias in the summary effect size estimate. Nonetheless, the test must be interpreted with caution in small meta-analyses. In particular, bias cannot be ruled out if the test is not significant. The proposed technique has potential utility as an exploratory tool for meta-analysts, as a formal procedure to complement the funnel-graph.",
+		"container-title": "Biometrics",
+		"ISSN": "0006-341X",
+		"issue": "4",
+		"journalAbbreviation": "Biometrics",
+		"language": "eng",
+		"note": "PMID: 7786990",
+		"page": "1088-1101",
+		"source": "PubMed",
+		"title": "Operating characteristics of a rank correlation test for publication bias",
+		"volume": "50",
+		"author": [
+			{
+				"family": "Begg",
+				"given": "C. B."
+			},
+			{
+				"family": "Mazumdar",
+				"given": "M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1994",
+					12
+				]
+			]
+		}
+	},
+	{
+		"id": "Egger1997",
+		"type": "article-journal",
+		"abstract": "Objective: Funnel plots (plots of effect estimates against sample size) may be useful to detect bias in meta-analyses that were later contradicted by large trials. We examined whether a simple test of asymmetry of funnel plots predicts discordance of results when meta-analyses are compared to large trials, and we assessed the prevalence of bias in published meta-analyses.\nDesign: Medline search to identify pairs consisting of a meta-analysis and a single large trial (concordance of results was assumed if effects were in the same direction and the meta-analytic estimate was within 30% of the trial); analysis of funnel plots from 37 meta-analyses identified from a hand search of four leading general medicine journals 1993-6 and 38 meta-analyses from the second 1996 issue of the Cochrane Database of Systematic Reviews.\nMain outcome measure: Degree of funnel plot asymmetry as measured by the intercept from regression of standard normal deviates against precision.\nResults: In the eight pairs of meta-analysis and large trial that were identified (five from cardiovascular medicine, one from diabetic medicine, one from geriatric medicine, one from perinatal medicine) there were four concordant and four discordant pairs. In all cases discordance was due to meta-analyses showing larger effects. Funnel plot asymmetry was present in three out of four discordant pairs but in none of concordant pairs. In 14 (38%) journal meta-analyses and 5 (13%) Cochrane reviews, funnel plot asymmetry indicated that there was bias.\nConclusions: A simple analysis of funnel plots provides a useful test for the likely presence of bias in meta-analyses, but as the capacity to detect bias will be limited when meta-analyses are based on a limited number of small trials the results from such analyses should be treated with considerable caution.\n\nKey messages Systematic reviews of randomised trials are the best strategy for appraising evidence; however, the findings of some meta-analyses were later contradicted by large trialsFunnel plots, plots of the trials' effect estimates against sample size, are skewed and asymmetrical in the presence of publication bias and other biasesFunnel plot asymmetry, measured by regression analysis, predicts discordance of results when meta-analyses are compared with single large trialsFunnel plot asymmetry was found in 38% of meta-analyses published in leading general medicine journals and in 13% of reviews from the Cochrane Database of Systematic ReviewsCritical examination of systematic reviews for publication and related biases should be considered a routine procedure",
+		"container-title": "BMJ",
+		"DOI": "10.1136/bmj.315.7109.629",
+		"ISSN": "0959-8138, 1468-5833",
+		"issue": "7109",
+		"journalAbbreviation": "BMJ",
+		"language": "en",
+		"note": "publisher: British Medical Journal Publishing Group\nsection: Paper\nPMID: 9310563",
+		"page": "629-634",
+		"source": "www.bmj.com",
+		"title": "Bias in meta-analysis detected by a simple, graphical test",
+		"URL": "https://www.bmj.com/content/315/7109/629",
+		"volume": "315",
+		"author": [
+			{
+				"family": "Egger",
+				"given": "Matthias"
+			},
+			{
+				"family": "Smith",
+				"given": "George Davey"
+			},
+			{
+				"family": "Schneider",
+				"given": "Martin"
+			},
+			{
+				"family": "Minder",
+				"given": "Christoph"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1997",
+					9,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "Rosenthal1979",
+		"type": "article-journal",
+		"abstract": "For any given research area, one cannot tell how many studies have been conducted but never reported. The extreme view of the \"file drawer problem\" is that journals are filled with the 5% of the studies that show Type I errors, while the file drawers are filled with the 95% of the studies that show nonsignificant results. Quantitative procedures for computing the tolerance for filed and future null results are reported and illustrated, and the implications are discussed. (15 ref) (PsycINFO Database Record (c) 2016 APA, all rights reserved)",
+		"container-title": "Psychological Bulletin",
+		"DOI": "10.1037/0033-2909.86.3.638",
+		"ISSN": "1939-1455(Electronic),0033-2909(Print)",
+		"issue": "3",
+		"note": "publisher-place: US\npublisher: American Psychological Association",
+		"page": "638-641",
+		"source": "APA PsycNET",
+		"title": "The file drawer problem and tolerance for null results",
+		"volume": "86",
+		"author": [
+			{
+				"family": "Rosenthal",
+				"given": "Robert"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1979"
+				]
+			]
+		}
+	},
+	{
+		"id": "Kraemer2006",
+		"type": "article-journal",
+		"abstract": "For the last half-century, randomized clinical trials (RCTs) have been the “gold standard” of evaluating the efficacy or effectiveness of clinical interventions. Randomized clinical trials are based on well-recognized principles that underlie guidelines, such as the CONSORT (Consolidated Standards of Reporting Trials), for reporting such studies. As frequently happens when practices become routine, the underlying logic fades into the background. This increasingly appears to be the case with RCT methodology. Even the best performed RCTs often fail to provide information most crucial to evaluating the treatment under study and thus to improving medical decision making.",
+		"container-title": "JAMA",
+		"DOI": "10.1001/jama.296.10.1286",
+		"ISSN": "0098-7484",
+		"issue": "10",
+		"journalAbbreviation": "JAMA",
+		"page": "1286-1289",
+		"source": "Silverchair",
+		"title": "Moderators of Treatment OutcomesClinical, Research, and Policy Importance",
+		"URL": "https://doi.org/10.1001/jama.296.10.1286",
+		"volume": "296",
+		"author": [
+			{
+				"family": "Kraemer",
+				"given": "Helena C."
+			},
+			{
+				"family": "Frank",
+				"given": "Ellen"
+			},
+			{
+				"family": "Kupfer",
+				"given": "David J."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2006",
+					9,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "Borenstein2009",
+		"type": "book",
+		"abstract": "This text provides a concise and clearly presented discussion of all the elements in a meta-analysis. It is illustrated with worked examples throughout, with visual explanations, using screenshots from Excel spreadsheets and computer programs such as Comprehensive Meta-Analysis (CMA) or Strata",
+		"call-number": "R853.M48 I58 2009",
+		"event-place": "Chichester, U.K",
+		"ISBN": "978-0-470-05724-7",
+		"language": "en",
+		"note": "OCLC: ocn263294996",
+		"publisher": "John Wiley & Sons",
+		"publisher-place": "Chichester, U.K",
+		"source": "Library of Congress ISBN",
+		"title": "Introduction to meta-analysis",
+		"editor": [
+			{
+				"family": "Borenstein",
+				"given": "Michael"
+			},
+			{
+				"family": "Hedges",
+				"given": "Larry",
+				"suffix": "V"
+			},
+			{
+				"family": "Higgins",
+				"given": "Julian",
+				"suffix": "P. T"
+			},
+			{
+				"family": "Rothstein",
+				"given": "Hannah",
+				"suffix": "R"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		}
+	},
+	{
+		"id": "Li2020",
+		"type": "article-journal",
+		"abstract": "In meta-analysis, heterogeneity often exists between studies. Knowledge about study features (i.e., moderators) that can explain the heterogeneity in effect sizes can be useful for researchers to assess the effectiveness of existing interventions and design new potentially effective interventions. When there are multiple moderators, they may amplify or attenuate each other’s effect on treatment effectiveness. However, in most meta-analysis studies, interaction effects are neglected due to the lack of appropriate methods. The method meta-CART was recently proposed to identify interactions between multiple moderators. The analysis result is a tree model in which the studies are partitioned into more homogeneous subgroups by combinations of moderators. This paper describes the R-package metacart, which provides user-friendly functions to conduct meta-CART analyses in R. This package can fit both fixed- and random-effects meta-CART, and can handle dichotomous, categorical, ordinal and continuous moderators. In addition, a new look ahead procedure is presented. The application of the package is illustrated step-by-step using diverse examples.",
+		"container-title": "Behavior Research Methods",
+		"DOI": "10.3758/s13428-020-01360-0",
+		"ISSN": "1554-3528",
+		"issue": "6",
+		"journalAbbreviation": "Behav Res",
+		"language": "en",
+		"page": "2657-2673",
+		"source": "Springer Link",
+		"title": "Multiple moderator meta-analysis using the R-package Meta-CART",
+		"URL": "https://doi.org/10.3758/s13428-020-01360-0",
+		"volume": "52",
+		"author": [
+			{
+				"family": "Li",
+				"given": "Xinru"
+			},
+			{
+				"family": "Dusseldorp",
+				"given": "Elise"
+			},
+			{
+				"family": "Su",
+				"given": "Xiaogang"
+			},
+			{
+				"family": "Meulman",
+				"given": "Jacqueline J."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					12,
+					1
+				]
+			]
+		}
+	}
+]

@@ -1,0 +1,141 @@
+\newpage
+
+# Method {.unnumbered}
+
+## Search Strategy and Eligibility {.unnumbered}
+      
+A systematic review and meta-analysis were conducted and reported using the Preferred Reporting Items for Systematic Review and Meta-Analysis guidelines [PRISMA, @Page2021] and the meta-analyses in psychotherapy [MAP-24, @Fluckiger2018] guidelines. The review protocol was pre-registered through PROSPERO (CRD42020175235).
+
+Literature was searched for articles reported prior to the search date (-April 2020) using the following inclusion criteria: (a) treatment delivered in a service which offers routine treatment (i.e., not primarily for research); (b) all adult sample (no patients under 16); (c) employed a *psychological treatment* (i.e., driven by psychological theory and intended to be therapeutic [@Spielmans2018], as inferred or described by study manuscripts, family/group treatments were excluded); and (d) conducted face-to-face. Studies were then excluded if they: (e) were not available in English; (f) did not employ a self-report measure of treatment effectiveness (i.e.  process, predictor, well-being or satisfaction measures not accepted); (g) did not provide an outcome for the acute treatment stage (i.e., pre-post  comparison, or in the absence of post-treatment score the soonest available follow-up measurement to a maximum of 6-months); or (f) employed randomization procedures or control groups. Although randomised control trials seek to reduce internal bias, their conditions are often not typical of routine services as the need for patient consent will lead to bias in who is offered and who accepts these conditions, therefore reducing representativeness. For study PICO table see supplementary Table 1.
+
+```{r  criteria-tab, echo = FALSE, include=F}
+criteria.table <- data.frame(
+  criteria = c("Population", "Intervention","Comparator", "Outcome", "Setting", "Design"),
+  inclusion = c("Sample exclusively aged 16 and above (lower end of sample age range is at least 16).",
+                 "Psychological intervention which includes individual face-to-face psycholgoical therapy (i.e. at least one session).",
+                 "Studies with pre and post intervention time points. Post intervention defined here as up to six months following treatment.",
+                 "Psychological treatment effectiveness using a validated self-report measurement tool.",
+                 "Services for which a patient could expect to access psychological therapy (i.e. routine services).",        
+                  "(i) Pre-post treatment designs. (ii) Studies which do not use a control condition."),
+  exclusion = c("Adolescent/child samples with a lower age limit below 16.",
+                 "Samples which indicate that any proportion of patients did not recieve at least one session of individual psychological therapy.",
+                  "(i) Studies which do not report both pre and post intervention time points. (ii) Studies for which the post intervention time point is beyond six
+                  months following treatment termination. (iii) Treatment randomisation proceadures.",
+                  "Service/settings which do not use a self-report measure of psychological effectiveness. Clinician reported measures were not included in this review.",
+                  "Service/settings that strongly do not appear naturalistic or reflect routine practice.",
+                  "(i) Studies which include a control group. (ii) Studies with N = <6. (iii) Results not available/published in English.")
+                    )
+
+# Table
+    kable(criteria.table, booktabs = TRUE, escape = FALSE, longtable = FALSE, align = "l",
+          caption = "Inclusion and exclusion criteria used in the current review, shown using the PICOS framework (population, intervention, comparator, outcome, setting).") %>% kable_styling(full_width = FALSE, latex_options = c("striped", "hold_position"))  %>% column_spec(1, width = "5em") %>% column_spec(2, width = "15em") %>% column_spec(3, width = "15em") 
+```
+
+There were three phases to the systematic search. Phase one was a systematic search of three electronic literature databases (MEDLINE, CINAHL and PsycInfo) via EBSCO using a pre-developed list of key terms. Study titles/abstracts were required to have a methodologically *AND* psychologically relevant term. Methodological terms (indicating effectiveness research) included: *practice-based evidence*, *routine practice*, *benchmarking*, *transportability*, *transferability*, *clinically representative*, *managed care setting*, *uncontrolled*, *external validity*, *applicable findings*, *empirically supported*, *dissemination*, and *clinical effectiveness evaluation*. These terms were selected based on their use in prior reviews of psychotherapy effectiveness [@Cahill2010; @Stewart2009a]. *Effectiveness* and *evaluation* were not used as single word terms due to producing unmanageable numbers of hits. For the psychologically relevant term: *psycho** OR *therap** was used for PsycInfo while *psycho** alone was used for MEDLINE and CINAHL (*therap** was removed due to unmanageable number of irrelevant hits). Limiters included *adult population* and *English language*. No exclusions were made based on the type of publication. Key term combinations and Boolean operators are reported in supplementary Table 2. Phase two included (a) a manual search of reference lists, and (b) forward citation searching (using Google Scholar) for all studies identified in phase one. Article titles relevant to the current review were identified by the first author using the search terms. Finally, phase three was a pragmatic grey literature search using the terms *psychotherapy* AND *routine-practice* AND *effectiveness* in GoogleScholar before reviewing the first 50 pages of results. When contacting study authors for additional information an accompanying invitation to recommend additional studies was made.
+
+After removal of duplicates search results were imported to *Rayyan* [@Ouzzani2016]. Rayyan is a web-platform that supports title/abstract screening through blinding decision results among collaborators and sorting abstracts by probability of inclusion through text mining. Studies identified from the systematic search were screened by the first author using a pre-developed and piloted screening tool. A sub-sample were screened by a second coder at each stage. Percentage agreement and inter-rater reliability statistics [Kappa [$\kappa$], @Cohen1960] were used to quantify screening precision. Descriptive classifiers available for interpreting $\kappa$ were employed [@Landis1977], consisting of *slight* (0-0.2), *fair* (0.2-0.4), *moderate* (0.4-0.6), *substantial* (0.6-0.8), and *almost perfect* (0.8-1.0).
+20% of titles/abstracts were coded by a trainee clinical psychologist showing substantial reliability 
+ ($\kappa$ = `r round(res$irr$k$abst$value, 2)`,
+1713/1740, `r round(res$irr$agree$abst$value, 2)`%)
+and 10% of full texts were coded by a clinical psychologist, showing strong reliability
+($\kappa$ = `r round(res$irr$k$full$value, 2)`, 24/30, 80%).
+For many included studies (`r slr$dat.req$requests.made$n`/252, 84.13%) authors were contacted via e-mail for additional information (two-week response time).
+`r slr$dat.req$corr$n` requests were for missing correlations while 
+`r slr$dat.req$other$n` were for additional data (e.g. M, SD etc.).
+E-mail responses were received for `r slr$dat.req$heard.back$n` authors
+(`r round((slr$dat.req$heard.back$n/slr$dat.req$requests.made$n)*100,2)`%) while data was provided for `r slr$dat.req$data.provided$n` samples
+(`r round((slr$dat.req$data.provided$n/slr$dat.req$requests.made$n)*100,2)`%).
+
+## Extraction {.unnumbered}
+      
+There was three separate outcome domains (and subsequently three meta-analyses) for *depression*, *anxiety* and *miscellaneous* outcomes. 
+For anxiety and depression, domain allocation was informed by the measure employed (i.e., depression measures in *depression*, anxiety measures in *anxiety*). All other effectiveness measures were placed in the *miscellaneous* domain; which commonly consisted of (i) general psychological distress scales, and then to a lesser extent (ii) peripheral outcomes scales indicating symptom amelioration (e.g., functioning, quality of life), or (iii) diagnosis-specific outcome scales (e.g., OCD, PTSD). Samples were not exclusive to disorder specific populations/treatments and therefore domains should not be seen as synonymous with diagnosis/treatment.
+
+A standardised extraction sheet was developed and pilot-tested with a sample of studies (*k* = 10). When extracting, pooled study samples were preferred. When only multiple independent samples were reported then effect-sizes were aggregated prior to meta-analysis to reduce bias of statistical dependency [@Hoyt2018; @Gleser2009]. To avoid loss of information, study samples were disaggregated for moderator analyses [@Cooper1998]. Studies with overlapping datasets were excluded. Samples which analysed patients lost to follow up were preferred to completer samples as they are less prone to attrition bias [@Juni2001].
+As extraction of multiple study effect-sizes within a single domain would lead to to statistical dependency [@Borenstein2021] we selected a single effect-size per sample, per domain [@Card2015; @Cuijpers2016], using a preference system (defined a priori, supplementary material) favouring most commonly employed measures in routine practice. As the current review only included self-report measures the need to select among multiple measures was rarely required.
+Reliability of coding for effect-size data was computed using a second coder for a sub-sample of manuscripts (n = 29) demonstrating almost perfect reliability
+across all values (
+$\kappa$ = `r round(res$irr$k$outcomes$value, 2)`, agreement = `r round(res$irr$agree$outcomes$value, 2)`%) 
+and perfect reliability for effect-size values ($\kappa$ = 1.00). Key categorical and numerical variables extracted from manuscripts for moderator analyses are reported in table X.
+
+\newpage 
+
+*[[[--------- --------- --------- --------- Insert Table 1 here --------- --------- --------- ---------]]]*
+
+### Categorical variables {.unnumbered}
+
+- **Setting:** the study was (i) *out-patient*, (ii) *inpatient* or (iii) *mixed.*
+- **Analysis method:** samples (i) *included* or (ii) *excluded* (completers) patients lost to follow up.
+- **Severity:** was determined through a stratification of studies based on  characteristics of the service [similar @deJong2021a]. (i) *Mild services* included primary care, physical health, University counselling, voluntary, private and employee assistance programmes; (ii) *Moderate services* included secondary care, community mental health centres, specialist psychotherapy centres, managed care settings, or intensive outpatient programmes; (iii) *severe services* represented inpatient samples; and (iv) *university* included university out-patient and training clinics.
+- **Treatment modality:** Treatments were coded as (i) *cognitive-behavioral* or (ii) *psychodynamic* based on manuscript self-designation (i.e., if the manuscript described treatment as CBT, then that was coded). In the absence of these terms then modality of best-fit were decided based on available treatment descriptions. Treatments that could not be confidently allocated to these groups were coded as (iii) *counselling* (e.g., person-centred, unspecific) or (iv) *other*. Treatments that did not describe treatment modality were rated as other.
+- **Continent:** Studies were coded as North America, United Kingdom (UK), mainland Europe, Australasia, or Asia. The UK was separated from Europe because of the high representation of outcomes research coming from the UK.
+- **Intervention development stage:** Studies were coded as (i) *preliminary studies* (i.e., testing novel treatments or treatment iterations) or (ii) *routine evaluations*.
+- **Experience:** Samples for which treatment delivery was exclusively by training professionals were coded as (i) *trainees* while studies with no evidence of training professionals were coded as (ii) *qualified*
+- **Measurement tool:** Measures that were represented at least ten times in the meta-analysis were entered as subgroups.
+- **Sample Size:** Following the approach of @Barth2013a, studies were coded as small (N=<25), medium (N=25-50), or large (N=50+).
+
+### Continuous variables {.unnumbered}
+- **Age:** Sample mean average age.
+- **Dosage:** Sample mean average treatment sessions.
+-	**Year:** of publication.
+- **Female preponderance**: Sample rate (%).
+- **Married**: Sample rate (%).
+- **Employed**: Sample rate (%).
+- **Ethnic minority**: Sample rate (%).
+
+\newpage
+
+```{r mod-desc-table, echo=FALSE, include=F}
+kable(tabs$mod.desc, booktabs = TRUE, escape = FALSE, align = c("l"),
+      col.names = c("Moderator","Level","Description"), longtable = FALSE,
+      caption = "Sumary coding sheet for extracting study information and categorising by level of moderator subgroup.
+                 These moderators form the categorical, subgroup variables for the current study.") %>%
+      kable_styling(full_width = F, font_size = 12) %>%
+      column_spec(1, width = "5em") %>% column_spec(2, width = "5em") %>% column_spec(3, width = "25em") %>%
+      collapse_rows(columns = 1, valign = "middle", latex_hline = "none") %>%
+      row_spec(c(0:1, 4:7, 9:12, 15:16), extra_latex_after = "\\rowcolor{gray!6}")
+```
+
+
+### Risk of Bias and Quality Assessment {.unnumbered}
+
+The Joanna Briggs Institute Quality Appraisal Tool for Case Series [@Munn2020] was used to rate study risk of bias. Eight criteria primarily focusing upon manuscript reporting detail were used. Criteria included manuscript reporting of: (i) service inclusion criteria, (ii) service description, (iii) treatment description, (iv) sample characteristics, (v) outcome data, (vi) effect-size calculation, (vii) consecutive patient recruitment, and (viii) inclusion of patients lost to follow-up (in statistical analysis). Each item was coded as either met or not met (including not clear) by the first author for each sample. A sub-sample (23.8%) was second coded by a pair of MSc psychological research methods students (11.9% each).
+
+The methodological quality for the body of evidence within each meta-analytic domain was assessed by three reviewers using guidelines for the Grading of Recommendations, Assessment, Development and Evaluations [GRADE, @Guyatt2008]. This framework rates evidence quality for each meta-analytic outcome based on included study designs. Individual ratings are initially provided (high, moderate, low or very low) and are then down-graded (or upgraded) through evaluation of five separate criteria; risk of bias within included studies, inconsistencies in aggregated treatment effect, indirectness of evidence, imprecision and publication bias.
+
+## Analysis {.unnumbered}
+
+All analyses were conducted using the R statistical analysis environment [@R-base, v 4.0.2]. Reporting of effect-size calculation followed available guidance [@Hoyt2018]. We calculated the standardised mean change [SMC: @Becker1988] for included studies using the *metafor* package. This approach divides the pre-post mean change score by the pretreatment standard deviation.
+Calculation of the sampling variance required an estimate of the pre-post correlation [@Morris2008]. For manuscripts not reporting all required information an approach to obtaining and/or imputing was followed (designed a priori, supplementary Table 3). When unavailable, Pearson’s *r* was imputed using an empirically derived estimate [*r* = .60, @Balk2012]. If all steps of this approach were unsuccessful then the study was removed from the meta-analysis. Aggregation of study samples (or sampling errors) was conducted using the *aggregate* function of *metafor* using standard inverse-variance weighting.
+
+```{r  es-proceadure-tab, echo = FALSE, include=F}
+kable(tabs$es.proc,
+      booktabs = TRUE, escape = FALSE, longtable = FALSE, align = c("l"),
+      caption = "Hierarchical proceadure for effect-size calculation.") %>%
+      kable_styling(full_width = FALSE, latex_options = "striped", font_size = 12) %>%
+      column_spec(1, width = "4em") %>% column_spec(2, width = "17em") %>% column_spec(3, width = "13em")
+```
+
+Meta-analyses were performed using the *metafor* [@R-metafor], *dmetar* [@Harrer2019a], and *meta* [@R-meta] packages. 
+Due to expected high heterogeneity, random-effects meta-analyses were used to estimate pooled and weighted effect-sizes [@Higgins2008]. This approach holds the assumption that included studies are randomly sampled from a population of studies [@Borenstein2021].
+95% confidence intervals were calculated for included studies.
+Forest plots were used to visualise the pattern of effects however due to the high number of studies they were stripped of text. As the large differences in study N risked disproportionate weighting of small samples [@Borenstein2021] a post-hoc sensitivity analysis was performed through re-running the primary meta-analyses using fixed-effects models. 
+Between-study heterogeneity was assessed using I^2^ [@Higgins2002] and the Q statistic [@Cochran1954]. I^2^ was interpreted as *low* (25-50%), *moderate* (50-75%) or *high* [75-100%, @Higgins2003]. The impact of publication bias on treatment estimates was visualised using funnel plots and assessed statistically using rank correlation tests [@Begg1994], Egger's regression test for funnel plot asymmetry [@Egger1997], and fail-safe N [Rosenthal method, @Rosenthal1979].
+
+Heterogeneity of SMC scores were tested using a range of pre-defined continuous (i.e., meta-regression) and categorical (i.e., subgroup analysis) moderator variables. Subgroup variables included:
+(i) *setting* (inpatient vs outpatient),
+(ii) *analysis* (i.e., non-/inclusion of patients lost to follow-up),
+(iv) *continent*,
+(iii) *severity* (mild, moderate, severe, university)
+(v) *treatment modality*,
+(vi) *experience* (unqualified vs. qualified therapists)
+(vii) *stage of treatment development* (preliminary study vs. routine evaluations),
+(viii) *measurement tool*, and
+(ix) *sample size* (small, medium, large).
+Meta-regression variables included
+(i) *publication year*,
+(ii) average *age* of sample,
+(iii) *dosage* (i.e. outpatient treatment sessions), and sample characteristics (% of samples: *female*, *minority ethnicity*, *married*, and in full-time *employment*.
+Moderator analyses followed available guidance [@Harrer2019]. Studies that were not relevant to a specific moderator analysis (or did not report required information) were temporarily omitted. All moderator analyses utilised mixed effect models [@Borenstein2021] with weighted estimation (inverse-variance weights). This approach uses random effects models for subgroup pooled effect sizes and fixed-effect models for testing differences between subgroups. An omnibus test (QM-test) was used to assess for significant subgroup differences (*p* = < .05). Significant moderators were considered through inspection of 95% confidence intervals nonoverlap.
+
+Multivariate meta regression was used to assess two models specified a priori. These included (i) *analysis*x*dosage*, and (ii) *continent*x*dosage*. Models were first developed using the subgroup (i.e., dummy) variable only, then with inclusion of dosage, and finally allowing for interactions. Significant models (*p* = <.05) were compared for goodness-of-fit using log-likelihood score, and Akaike’s-information criteria (AIC).

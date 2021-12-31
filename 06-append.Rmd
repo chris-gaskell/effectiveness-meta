@@ -1,0 +1,157 @@
+# Appendix {.unnumbered}
+## Appendix A. Systematic search terms {#AppendixA .unnumbered}
+
+```{r  apppend-terms-tab, echo = FALSE}
+supp <- list()
+
+supp$terms = data.frame(
+      routine = c("'Practice based evidence'", "'Routine practice'", "Benchmarking", "Transportability", 
+                        "Transferability", "Clinical* representat", "'External valid* N0 findings", "Applicab* N0 findings",
+                        "Applicab* N0 intervention*", "'Empiric* support*' N0 treatment*", "'Empiric* support*' N0 intervention*",
+                        "'Clinical* Effective*'", "Dissem* N0 treatment*", "Dissem* N0 intervention*", "'Clinical Practice' N0 intervention*",
+                        "'Clinical Practice' N0 treatment*", "'Service deliv*' N0 intervention*", "'Service deliv*' N0 treatment*",
+                        "'Clinical* effective*' N2 evaluat*", "'Service deliv*' N0 evaluat*", "Transporting", "'Managed care setting'",
+                        "Uncontrolled", "'Community clinic'", "'Community mental health centre'", "'Clinic setting'", "'Service setting'"),
+    psychology = c("Psycho* OR Therap [PsycInfo]", "Psycho* [CINAHL and MEDLINE]", "", "", "","","","","","","","","","", "","","","","","","","","","", "", "", ""),
+    limiters =  c("English Language", "Adult Sample", "","","","","","","","","","","","","","","","","","","","","","","","", "")
+          )
+
+kable(supp$terms, booktabs = TRUE, escape = FALSE, longtable = TRUE,
+        col.names = c("Effectiveness Study Term", "Psychological Relevence Term", "Limiters"),
+        align = "l", caption = "List of search terms and limiters for systematic database search") %>%
+        #row_spec(row = 0, align = "l") %>% 
+      kable_styling(full_width = F, font_size = 10, latex_options = 'striped') %>% 
+    column_spec(1, width = "17em") %>% column_spec(2, width = "10em") %>% column_spec(3, width = "5em")
+```
+
+## Appendix B. Preference system for outcome measures  {.unnumbered}
+
+```{r apppend-measure-counts, echo=FALSE, include=TRUE, message=FALSE}
+
+supp$measure.ns <- lapply(dat.comb, function(x) x%>% filter(measure.used == "Yes"))
+supp$measure.ns$dep <- supp$measure.ns$dep %>%  select(measure.used, measure.type, measure.group)
+supp$measure.ns$anx <- supp$measure.ns$anx %>%  select(measure.used, measure.type, measure.group)
+supp$measure.ns$gen <- supp$measure.ns$gen %>%  select(measure.used, measure.type, measure.group)
+
+supp$measure.ns <- lapply(dat.comb, function(x) x%>% group_by(measure.type) %>% count(sort = TRUE) %>% 
+                    filter(n >= 3) %>% as.data.frame() %>% 
+                    rename(Measure = measure.type))
+supp$measure.ns$dep$domain <- "depression"
+supp$measure.ns$anx$domain <- "anxiety"
+supp$measure.ns$gen$domain <- "general"
+
+supp$measure.ns$comb <- rbind(supp$measure.ns$dep, supp$measure.ns$anx)
+supp$measure.ns$comb <- rbind(supp$measure.ns$comb, supp$measure.ns$gen)
+```
+
+Because of the heterogeneity of outcome measures which could fit within
+the 'general' category the following hierarchy was used: (1) global
+measures of psychological distress (e.g. CORE-OM, SCL-90); (2)
+mono-symptomatic measures (e.g. Y-BOCS, EDE-Q). If a study used more
+than one measure at the same point in the hierarchy then we used the
+measure that had been most frequently employed in studies reviewed
+prior. Below is the final table of outcome measures used in the general
+category.
+
+```{r apppend-measure-tab, include=TRUE, echo=FALSE}
+kable(supp$measure.ns$comb,
+      booktabs = T, escape = T, longtable = T, align = "l",
+      caption = "Frequency of outcome measures with at least three occurances") %>%
+        kable_styling(font_size = 12, full_width = F)  %>% 
+          column_spec(1, width = "19em") %>% column_spec(2, width = "4em")%>%
+          column_spec(3, width = "10em", bold = T) %>%
+            row_spec(c(2,4,6,8,10,12,14,16,18,20,22,24,26), extra_latex_after = "\\rowcolor{gray!6}") %>% 
+              collapse_rows(columns = 3, valign = "top", latex_hline = "major")  %>%
+    footnote(general_title = "Note.", general = "Abbreviations: Beck's Depression Inventory (BDI); Patient Health Questionnaire-9 (PHQ-9); Brief Symptom Invetory (BSI); Symptom Checklist 90 Revised (SCL90R); Centre for Epidemiological Studies Depression Scale (CESD10); Depression Anxiety and Stress Scale (DASS); Hospial Anxiety & Depression Scale (HADS) Short Form-36 (SF36); Beck's Anxiety Inventory BAI); Generalised Anxeity Disorder-7 (GAD7); Penn-State Worry Questionnaire (PSWQ); CORE Outcome Measurement (CORE-OM); Outcome Questionnaire-45 (OQ45); PTSD Checklist (PCL); Work and Social Adjustment Scale (WSAS); Yale-Brown Obsessive Compulsive Scale (Y-BOCS); Eating Disorder Examination Questionnaire (EDEQ); Behavioural Health Measure (BHM); General Health Questionnaire (GHQ); Short Form-36 (SF36).",
+    threeparttable = TRUE, footnote_as_chunk = TRUE)
+```
+
+## Appendix C. Systematic review screening tool {.unnumbered}
+
+```{r append-screen-tool-tab, echo=FALSE, include=TRUE, message=FALSE}
+supp$screen.tool <- read_excel("Input/ft-screening.xlsx", sheet = "ScreeningTool")
+
+kable(supp$screen.tool,
+    booktabs = TRUE, escape = FALSE, longtable = TRUE,
+    col.names = c("Criteria", "Theme", "Notes"),
+    align = "l", caption = "List of search terms and limiters for systematic database search") %>%
+      kable_styling(full_width = T, font_size = 10) %>%
+      column_spec(1, width = "9em") %>% column_spec(2, width = "7em")
+```
+
+\newpage
+
+
+## Appendix D. Further information for extraction and coding process {.unnumbered}
+### Sample Characteristics
+There was high variability of demographic reporting for each study (e.g. gender, age, ethnicity etc.). For demographic information, the (i) mean age of each sample was extracted, and then (when reported) the number and percentage of: (ii) female, (iii), minority ethnic group, (iv) full-time employed, (v) and married patients. Each of these variables were summarised by averaging across mean averages for studies which reported this information.
+
+### Methodological Information
+For methodological information the type of completion analysis used was extracted. Samples were coded as either true ITT (everyone had an equal chance of inclusion), modified ITT, or completers. The stage of the hour-glass model was also recorded for each effectiveness study. Samples were rated as either stage-1 (pilot and preliminary effectiveness studies) or stage-3 (evaluation/benchmarking studies studies). The region (country and continent) was recorded; studies from the UK were separated from mainland Europe, due to the high volume of effectiveness research originating in the UK.
+
+### Service Information
+The type of service and associated sector were extracted for each study. As there were a large number of different sectors represented, a grouping system clustered similar sectors together. Services from primary care, health settings, counseling, and voluntary services were collated into a ‘primary’ sector category. Services delivering interventions for more specialist, complex or enduring presentations were grouped into a ‘secondary’ category. This included specialist/tertiary therapy services/clinics, community mental health teams/centers, and intensive out-patient services. University based services (either training clinics or counseling centers) were assigned to a ‘University clinics’ category. Finally, inpatient, day hospital and partial hospital services were grouped into a ‘inpatient’ category. Whether or not study interventionists consisted of clinicians in training was also recorded as a separate variable. We defined clinicians in training as staff training towards a professional psychology training course (i.e. clinical psychology interns/students, training psychiatrists or assistant psychologists). Staff who were not psychologists or qualified therapists, but who had a core profession (e.g. nurses, social workers) were not recognised as unqualified interventionists.
+
+### Treatment Information
+The treatment delivered was recorded for each study. Treatments were then assigned to a broad meta-therapy category, including: (i) cognitive and/or behavioural, (ii) dynamic/interpersonal, (iii) person-centered counseling (or counseling without a specified orientation), or (iv) other/non-specified. The average number of sessions was also recorded. For studies that reported the mean number of sessions then this was the metric extracted. For studies that alternatively used a time metric (days/weeks/months/years) then a uniform metric was applied (i.e. conversion to days). There was subsequently two possible dosage metrics, sessions of treatment and treatment days. If studies reported sample dosage, but with an alternative measure of central tendency (i.e. median) then this was converted to mean average.
+\newpage
+
+## Appendix E. Quality appraisal tool {.unnumbered}
+
+```{r  append-rob-tool-tab, echo = FALSE}
+supp$rob.tool <- data.frame(
+    Criteria = c("1", "2","3", "4", "5", "6", "7", "8"),
+Definition = c(
+"Clear criteria for inclusion (if any form of inclusion criteria is provided and clearly stated).",
+"Consecutive inclusion (need to be an explicit statement of being 'consecutive' or 'all patients between the dates of'.",
+"Complete inclusion (fulfill previous criteria + true intention-to-treat analysis performed).",
+"Clear reporting of demographics (2 out of the following: gender, age, ethnic, marital status, employment).",
+"Clear reporting of treatment information (2 out of the following: details regarding the interventionist, type of treatment, number of sessions).",
+"Post-outcome clearly reported (means and standard deviations are available).",
+"Site/Clinic reporting details (i.e. brief statement about the nature of the host service/s).",
+"Appropriate statistical analyses (measure of effect-size reported [e.g. cohen's d, hedge's g, reliable change]))."
+              ))
+
+kable(supp$rob.tool,
+      booktabs = TRUE, escape = FALSE, longtable = FALSE, align = c("l"),
+      caption = " Adaprted version of 'The Joanna Briggs Institute Critical Appraisal tools: Checklist for Case Series'.") %>%
+      kable_styling(full_width = FALSE, latex_options = c("striped", 'hold_position'),
+                    font_size = 12) %>% column_spec(1, width = "4em") %>% column_spec(2, width = "24em")
+```
+
+
+\newpage
+
+## Appendix F. Supplementary material link {.unnumbered}
+
+The supplementary material for the current review is available at:
+https://osf.io/p9sx5/?view_only=b906293276f54850824a1bcb86d47440
+
+Included in the supplementary material is a complete bibliography, including all studies which featured in the qualitative synthesis and meta-analysis.
+
+
+## Appendix G. Systematic search exclusion reasons {.unnumbered}
+
+```{r append-exclusions-tab, echo=FALSE, include=T, message=FALSE}
+supp$exclusion.ns <- slr$combined %>% filter(Decision == "Exclude") %>%
+                                      group_by(ExclusionReason, SecondaryReason) %>% count() %>%
+                                      drop_na(SecondaryReason)
+kable(supp$exclusion.ns, booktabs = TRUE, escape = FALSE, longtable = TRUE,
+      align = "l", 
+      caption = "Frequency of exclusion reasons from the systematic search.") %>%
+        kable_styling(font_size = 12, full_width = F)  %>%
+          column_spec(1, width = "10em") %>% column_spec(2, width = "15em") %>% column_spec(3, width = "5em")  %>%
+          row_spec(c(2,4,6,8,10,12,14,16,18,20,22), extra_latex_after = "\\rowcolor{gray!6}") %>%
+          collapse_rows(columns = 1, valign = "top", latex_hline = "major")
+```
+
+
+
+\noindent \vspace{-2em} \setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in} \setlength{\parskip}{15pt}
+
+
+
+
+
+

@@ -1,0 +1,371 @@
+\newpage
+
+# Results {.unnumbered}
+
+```{r prisma-fig, include=F, echo=F, message=F, warning=F}
+PRISMAstatement::prisma(found = 10503, found_other = tabs$prisma$found_other, no_dupes = tabs$prisma$no_dupes, screened = tabs$prisma$no_dupes, 
+       screen_exclusions = tabs$prisma$screen_exclusions, full_text = tabs$prisma$full_text, full_text_exclusions = tabs$prisma$full_text_exclusions, 
+       qualitative = tabs$prisma$qualitative, quantitative = tabs$prisma$quantitative, width = 800, height = 1000, font_size = 12)
+# rsvg and DiaggrammeRsvg need to be installed for this to work.
+```
+```{r funnels, echo=FALSE, include=F, message=FALSE, fig.height=3.5, fig.width=3.75}
+funnel(res$rma$dep, cex.axis = .75, cex.lab = .75, xlab = NA)
+
+funnel(res$rma$anx, cex.axis = .75, cex.lab = .75, xlab = NA)
+
+funnel(res$rma$gen, cex.axis = .75, cex.lab = .75,
+       xlab = "Standardised Mean Change")
+```
+
+## Search Results {.unnumbered}
+
+A PRISMA flow diagram [@Page2021] is shown in Figure 1.
+10,503 records were identified through the systematic search. Following title/abstract screening there was `r nrow(slr$combined)` studies remaining.
+`r slr$ms.requests %>% nrow()` manuscripts were not available through the first author's institution.
+E-mail requests to corresponding authors led to the retrieval of `r slr$ms.requests %>% filter(acquired == "Yes") %>% nrow()` further manuscripts.
+Articles with unavailable manuscripts (n = 
+`r slr$ms.requests %>% filter(acquired == "No") %>% nrow()`) were excluded from the review.
+Following full-text screening there were
+`r slr$combined %>% filter(Decision == "Include") %>% nrow()` 
+manuscripts remaining (*k* = `r dat.mod %>% nrow()`), of which
+`r dat.mod %>% filter(StudySampleN == 1 & For.Meta == "Yes") %>% nrow()` (*k* = `r dat.mod %>% filter(For.Meta == "Yes") %>% nrow()`) had sufficient information to be included in the meta-analysis. Summary statistics are provided in Table 2.
+
+*[[[--------- --------- --------- --------- Insert Figure 1 here --------- --------- --------- ---------]]]*
+
+*[[[--------- --------- --------- --------- Insert Table 2 here --------- --------- --------- ---------]]]*
+
+```{r fulltext-screening-tab, echo=FALSE, warning=FALSE, message=FALSE, include=F}
+kable(tabs$slr.res,
+      booktabs = TRUE, escape = FALSE, longtable = TRUE, align = c("l"),
+      caption = "Full-text screening decision results for all studies") %>%
+      kable_styling(full_width = FALSE, latex_options = "striped", position = "center") %>%
+      column_spec(1, width = "7em") %>% column_spec(2, width = "7em") %>% column_spec(3, width = "7em") %>% column_spec(4, width = "7em") %>%
+    footnote(general_title = "Note.",
+             general = c("Difinitions for different phases are as follows:",
+                          "Phase 1 = studies identified through the electonic database search.",
+                          "Phase 2 =  studies identified through phase 1 reference lists and citation searching.",
+                          "Phase 3 = grey literature and studies provided by authors contacted during the study."),
+      threeparttable = TRUE, footnote_as_chunk = TRUE, fixed_small_size = T)
+```
+
+```{r year-info, echo=FALSE, fig.cap= "Bar chart of publication year"}
+YearInfo <- dat.mod %>% filter(StudySampleN == 1) %>% select(Year) %>% get_summary_stats()
+```
+
+```{r study-summary-tab, echo=FALSE, include=F}
+kable(tabs$narr,
+      booktabs = TRUE, escape = FALSE, align = c("l"), longtable = FALSE,
+      caption = "Summary statistics across the pooled sample and also by severity for varying variables.",
+      col.names = c("", "Level", "Uni Clin", "Primary", "Secondary", "Inpatient", "Other", "Total")
+      ) %>%
+          kable_styling(full_width = F, font_size = 11, latex_options = "hold_position")  %>%
+          row_spec(c(0:1, 6:9, 13:15, 20:21, 27), extra_latex_after = "\\rowcolor{gray!6}")  %>% row_spec(27, hline_after = T) %>%
+          column_spec(3, width = "3em") %>% 
+          collapse_rows(columns = 1, valign = "middle", latex_hline = "none")
+```
+
+```{r, demographic-info, echo = FALSE}
+# Compute descriptive stats for numerical variables
+AgeInfo <- dat.mod %>% get_summary_stats(AgeMean)
+GenderInfo <- dat.mod %>% get_summary_stats(Female.perc)
+# Gender Computations
+TotalFemaleN <- dat.mod %>% select(FemaleN) %>% drop_na %>%  sum()
+TotalN <- sum(dat.mod$DemographicN, na.rm = TRUE) 
+TotalFemalePerc <-  round((TotalFemaleN/TotalN)*100,2)
+
+Stage1 <- dat.mod %>% filter(HourGlass == "Stage-1") %>% nrow() %>% `/`(298) %>% `*`(100) %>%  sum() %>% round(2)
+Stage3 <- dat.mod %>% filter(HourGlass == "Stage-3") %>% nrow() %>% `/`(298) %>% `*`(100) %>%  sum() %>% round(2)
+
+```
+
+### Study Characteristics {.unnumbered}
+
+Study publication ranged from `r YearInfo$min` to `r YearInfo$max` (median = `r YearInfo$median`, *k* = `r dat.mod %>% filter(Year >= 2000) %>% nrow()` published ≥ 2000).
+`r dat.mod %>% filter(ITT2 == "Assume ITT" | ITT ==  "ITT" | ITT ==  "Modified ITT") %>% nrow()` samples included patients lost to follow-up (*k* = `r dat.mod %>% filter(ITT == "Completers") %>% nrow()` completers).
+There were `r dat.mod %>% filter(HourGlass == "Stage-1") %>% nrow()` (`r Stage1`%) preliminary study samples and
+`r dat.mod %>% filter(HourGlass == "Stage-3") %>% nrow()` (`r Stage3`%) routine practice evaluation samples.
+The USA was the most well represented country (*k* = `r dat.mod %>% filter(Country == "USA") %>% nrow()`), followed by England (*k* = `r dat.mod %>% filter(Country == "England") %>% nrow()`), Germany (*k* = `r dat.mod %>% filter(Country == "Germany") %>% nrow()`), Sweden (*k* = `r dat.mod %>% filter(Country == "Sweden") %>% nrow()`), and Canada (*k* = `r dat.mod %>% filter(Country == "Canada") %>% nrow()`). These five most well-represented countries accounted for the majority of the included samples (*k* = `r dat.mod %>% filter(Country == "USA"|Country == "England"|Country == "Sweden"|Country == "Germany"|Country == "Canada") %>% nrow()`). For continent, North America (*k* = `r dat.mod %>% filter(Continent == "N.America") %>% nrow()`) was the most well represented, followed by the UK (*k* = `r dat.mod %>% filter(Continent == "UK") %>% nrow()`), mainland Europe (*k* = `r dat.mod %>% filter(Continent == "Europe") %>% nrow()`), Australasia (*k* = `r dat.mod %>% filter(Continent == "Australasia") %>% nrow()`), and Asia (*k* = `r dat.mod %>% filter(Continent == "Asia") %>% nrow()`).
+
+### Sample Characteristics {.unnumbered}
+
+Sample characteristics were reported for `r dat.mod %>% select(SamplesRepresented) %>% filter(SamplesRepresented != 0) %>% sum()` samples, with a cumulative N of `r sum(dat.mod$DemographicN, na.rm = TRUE) %>% format(big.mark=",")` (mean = `r mean(dat.mod$DemographicN, na.rm = TRUE) %>% round(2)`,
+median = `r median(dat.mod$DemographicN, na.rm = TRUE) %>% round(2)`,
+range = 
+`r min(dat.mod$DemographicN, na.rm = TRUE) %>% format(big.mark=",")` - `r max(dat.mod$DemographicN, na.rm = TRUE) %>% format(big.mark=",")`,
+IQR = `r IQR(dat.mod$DemographicN, na.rm = TRUE) %>% round(2)`
+).
+The female preponderance was `r TotalFemalePerc`% (N =
+`r dat.mod %>% select(FemaleN) %>% drop_na %>%sum() %>% format(big.mark=",")`, 
+*k* = `r dat.mod %>% drop_na(FemaleN) %>% select(SamplesRepresented) %>% sum()`) with
+13 all female samples and 2 all male samples.
+The mean average sample age was `r round(mean(dat.mod$AgeMean, na.rm = T),2)` years (range = 
+`r format(round(min(dat.mod$AgeMean, na.rm = T), 2), nsmall = 2)` -
+`r format(round(max(dat.mod$AgeMean, na.rm = T), 2), nsmall = 2)`).
+Across studies which provided information, 
+`r scales::percent(round(mean(dat.mod$Minority.perc, na.rm = T), 2), accuracy = .01)` of patients represented minority ethnic backgrounds (*k* = `r dat.mod %>% select(Minority.perc) %>% drop_na() %>% nrow()`), 
+`r scales::percent(round(mean(dat.mod$Married.perc, na.rm = T), 2), accuracy = .01)` were married (*k* = `r dat.mod %>% select(Married.perc) %>% drop_na() %>% nrow()`), and
+`r scales::percent(round(mean(dat.mod$Minority.perc, na.rm = T), 2), accuracy = .01)` were in employment (*k* = 
+`r dat.mod %>% select(Employed.perc) %>% drop_na() %>% nrow()`).
+
+### Treatment Characteristics {.unnumbered}
+
+Most samples used a cognitive-behavioral treatment modality (*k* = 
+`r dat.mod %>% filter(Therapy == "CBT") %>% nrow()`) while
+`r dat.mod %>% filter(Therapy == "Dynamic") %>% nrow()`
+used psychodynamic, and
+`r dat.mod %>% filter(Therapy == "Counselling") %>% nrow()`
+used counselling (other = 
+`r dat.mod %>% filter(Therapy == "Other") %>% nrow()`).
+For severity,
+`r dat.mod %>% filter(Sector == "Primary") %>% nrow()` (`r paste(round(SectorFreq[2],2))`%) samples came from mild services,
+`r dat.mod %>% filter(Sector == "Secondary") %>% nrow()` 
+(`r paste(round(SectorFreq[4],2))`%) from moderate services,
+`r dat.mod %>% filter(Sector == "Residential") %>% nrow()` 
+(`r paste(round(SectorFreq[3],2))`%) from severe services, and
+`r dat.mod %>% filter(Sector == "Uni. Clinics") %>% nrow()` 
+(`r paste(round(SectorFreq[5],2))`%) from University services (other, *k* = `r dat.mod %>% filter(Sector == "Other") %>% nrow()`, `r paste(round(SectorFreq[1],2))`%).
+Treatment dosage, when reported (*k* = `r dat.mod %>% select(DosageMetric) %>% filter(DosageMetric !="NA") %>% count()`)
+was in hours/sessions (*k* = `r dat.mod %>% filter(DosageMetric=="Sessions" | DosageMetric=="Hours") %>% count()`), months (*k* = `r dat.mod %>% filter(DosageMetric=="Months") %>% count()`) or days (*k* = `r dat.mod %>% filter(DosageMetric=="Days") %>% count()`).
+The pooled (non-weighted) average dosage (hours) was
+`r format(round(mean(dat.mod$SessionsAvg, na.rm = T),1), nsmall= 2)` sessions
+(median = `r format(round(median(dat.mod$SessionsAvg, na.rm = T),1), nsmall= 2)`,
+range = `r format(round(min(dat.mod$SessionsAvg, na.rm = T),1), nsmall= 2)`-`r format(round(max(dat.mod$SessionsAvg, na.rm = T),1), nsmall= 2)`,
+IQR = `r format(round(IQR(dat.mod$SessionsAvg, na.rm = T),1), nsmall= 2)`).
+`r dat.mod %>% filter(TrainingExclusive == "Yes") %>% count()` samples
+reported that treatment was delivered exclusively by unqualified/trainee clinicians, while `r dat.mod %>% filter(IncludesUnqualifieds == "Yes") %>% count()` samples reported having at least one unqualified/trainee clinician.
+
+### Risk of Bias {.unnumbered}
+
+There was 60 studies rated across 8 criteria (i.e., 480 items).
+The pooled agreement was `r res$irr$RoB$agree$all$value %>% round(2)`
+($\kappa$ = `r res$irr$RoB$kappa$all$value %>% round(2)`).
+Individual items varied in there levels of agreement (70.0%-98.3%).
+In order of most met criteria was
+demographic reporting detail (`r sum(qual$DemographCalc, na.rm = T)`/298, agreement = `r res$irr$RoB$agree$demographics$value %>% round(2)`%,
+  $\kappa$ = `r res$irr$RoB$kappa$demographics$value %>% round(2)`),
+service reporting detail (`r sum(qual$ClinicCalc, na.rm = T)`/298, agreement = `r res$irr$RoB$agree$service.data$value %>% round(2)`%,
+  $\kappa$ = `r res$irr$RoB$kappa$service.data$value %>% round(2)`),
+study outcome reporting details (`r sum(qual$OutcomeCalc, na.rm = T)`/298, agreement = `r res$irr$RoB$agree$outcome.data$value %>% round(2)`%,
+  $\kappa$ = `r res$irr$RoB$kappa$outcome.data$value %>% round(2)`), 
+intervention reporting detail (`r sum(qual$InterventionCalc, na.rm = T)`/298, agreement = `r res$irr$RoB$agree$intervention.info$value %>% round(2)`%,
+  $\kappa$ = `r res$irr$RoB$kappa$intervention.info$value %>% round(2)`),
+service inclusion criteria (`r sum(qual$CriteriaCal, na.rm = T)`/298, agreement = `r res$irr$RoB$agree$criteria$value %>% round(2)`%,
+  $\kappa$ = `r res$irr$RoB$kappa$criteria$value %>% round(2)`), 
+appropriate use of analysis (`r sum(qual$AnalysisCalc, na.rm = T)`/298, agreement = `r res$irr$RoB$agree$analysis$value %>% round(2)`%,
+  $\kappa$ = `r res$irr$RoB$kappa$analysis$value %>% round(2)`), 
+complete inclusion (i.e. consecutive recruitment and inclusion of those lost to follow-up, `r sum(qual$CompleyeCalc, na.rm = T)`/298, agreement = `r res$irr$RoB$agree$complete$value %>% round(2)`%, $\kappa$ = `r res$irr$RoB$kappa$complete$value %>% round(2)`), 
+and consecutive inclusion (`r sum(qual$ConsecCalc, na.rm = T)`/298, agreement = `r res$irr$RoB$agree$consecutive$value %>% round(2)`%,
+  $\kappa$ = `r res$irr$RoB$kappa$consecutive$value %>% round(2)`), 
+
+## Meta-Analyses {.unnumbered}
+
+```{r plots-forest-funnell, echo=FALSE, include=F, message=FALSE}
+forest(res$rma$dep,
+       order = "resid", annotate = FALSE, addfit = TRUE, xlim = c(0,3), top = 0, refline = 0, slab = NA,
+       xlab = "Cohen's d (Standardised Mean Change)\nEffect-sizes greater than 0 indicates improvement",
+       mlab = "Pooled Effect Size", cex.axis = .75, cex.lab = .75)
+funnel(res$rma$dep, cex.axis = .75, cex.lab = .75)
+
+forest(res$rma$anx,
+       order = "resid", annotate = FALSE, addfit = TRUE, xlim = c(0,3), top = 0, refline = 0, slab = NA,
+       xlab = "Cohen's d (Standardised Mean Change)\nEffect-sizes greater than 0 indicates improvement",
+       mlab = "Pooled Effect Size", cex.axis = .75, cex.lab = .75)
+funnel(res$rma$anx, cex.axis = .75, cex.lab = .75)
+
+forest(res$rma$gen,
+       order = "resid", annotate = FALSE, addfit = TRUE, xlim = c(0,3), top = 0, refline = 0, slab = NA,
+       xlab = "Cohen's d (Standardised Mean Change)\nEffect-sizes greater than 0 indicates improvement",
+       mlab = "Pooled Effect Size", cex.axis = .75, cex.lab = .75)
+funnel(res$rma$gen, cex.axis = .75, cex.lab = .75)
+```
+
+*[[[--------- --------- --------- --------- Insert Figures 2 here --------- --------- --------- ---------]]]*
+
+Details for individual studies (characteristics, effect-size, measurement tools) are presented in tabular form and forest plots (supplementary tables 4-5, supplementary figures 1-3).
+During the GRADE methodological appraisal process, each of the meta-analysis were initially rated as ‘low,’ based on the predominant type of study design within the available evidence. Following review of the five GRADE areas these overall ratings were reduced in level to ‘very low’ based on study limitations and also inconsistency within the available evidence.
+
+```{r  rma-summary-tab, echo = FALSE, include = F}
+kable(tabs$rma.sum,
+      booktabs = TRUE, escape = FALSE, longtable = FALSE,
+      align = c("l", "c", "c", "c", "c", "c", "c", "c"),
+      caption = "Findings from the primary meta-analyses.",
+      format.args = list(floating=FALSE)) %>% 
+      kable_styling(full_width = F, latex_options = c("striped", "hold_position"))
+```
+
+*[[[--------- --------- --------- --------- Insert Table 6 here --------- --------- --------- ---------]]]*
+
+The random-effects meta-analysis for depression outcomes (*k* = `r dat$dep %>% nrow()`, N = `r dat$dep %>% select(PreN) %>% drop_na %>% sum() %>% format(big.mark=",")`), across
+`r length(unique(dat$dep$measure.group))-1`
+unique measurement tools was significant
+(*p* = `r format.pval(res$rma$dep$pval, eps = .001)`),
+indicative of a strong (*d* = `r round(res$rma$dep$b, 2)`, CI = `r round(res$rma$dep$ci.lb, 2)`-`r round(res$rma$dep$ci.ub, 2)`) reduction in depression symptoms. There was significant study heterogeneity (I^2^ = `r round(res$rma$dep$I2, 2)`%, Q[df = `r (res$rma$dep$k - 1)`] = `r round(res$rma$dep$QE, 2) %>% format(big.mark=",")`, *p* = `r format.pval(res$rma$dep$QMp, eps = .001)`). The funnel plot (Figure X) shows limited visual evidence of asymmetry. The funnel rank correlation test was not significant ($\tau$ = `r round(res$bias$rank$dep$tau, 3)`, *p* = `r format.pval(res$bias$rank$dep$pval, eps = .001, digits = 3)`) however the funnel regression test was significant (Z = `r round(res$bias$reg$dep$zval, 3)`, *p* = `r format.pval(res$bias$reg$dep$pval, eps = .001, digits = 2)`).
+The fail-safe N was `r res$bias$fsn$dep$fsnum %>% format(big.mark=",")`.
+
+The random-effects meta-analysis for anxiety outcomes
+(*k* = `r dat$anx %>% nrow()`,
+N = `r dat$anx %>% select(PreN) %>% drop_na() %>% sum() %>% format(big.mark=",")`, measurement tools = `r length(unique(dat$anx$measure.group))-1`) was significant
+(*p* = `r format.pval(res$rma$anx$pval, eps = .001)`),
+indicative of a strong (*d* = `r round(res$rma$anx$b, 2)`, CI =  `r round(res$rma$anx$ci.lb, 2)`-`r round(res$rma$anx$ci.ub, 2)`) reduction in symptoms. There was significant heterogeneity across studies (I^2^ = `r round(res$rma$anx$I2, 2)`%, Q[df = `r (res$rma$anx$k - 1)`] = `r round(res$rma$anx$QE, 2) %>% format(big.mark=",")`, *p* = `r format.pval(res$rma$anx$QMp, eps = .001)`). The funnel plot shows limited evidence of asymmetry. The funnel rank correlation test was not significant ($\tau$ = `r round(res$bias$rank$anx$tau, 3)`, *p* = `r format.pval(res$bias$rank$anx$pval, eps = .001, digits = 3)`). In contrast, the funnel regression test was significant (Z = `r round(res$bias$reg$anx$zval, 3)`, *p* = `r format.pval(res$bias$reg$anx$pval, eps = .001, digits = 2)`). The fail-safe N was `r res$bias$fsn$anx$fsnum %>% format(big.mark=",")`
+
+The random-effects meta-analysis for miscellaneous outcomes (i.e., global distress, functioning, diagnosis specific;
+*k* = `r dat$gen %>% nrow()`,
+N = `r dat$gen %>% select(PreN) %>% drop_na() %>% sum() %>% format(big.mark=",")`,
+measurement tools = `r length(unique(dat$gen$measure.group))-1`) was significant (*p* = `r format.pval(res$rma$gen$pval, eps = .001)`), indicative of a strong (*d* = `r round(res$rma$gen$b, 2)`, CI = `r round(res$rma$gen$ci.lb, 2)`-`r round(res$rma$gen$ci.ub, 2)`) reduction in symptoms. There was evidence of significant study heterogeneity across the included studies (I^2^ = `r round(res$rma$gen$I2, 2)`%, Q[df = `r (res$rma$gen$k - 1)`] = `r round(res$rma$gen$QE, 2) %>% format(big.mark=",")`, *p* = `r format.pval(res$rma$gen$QMp, eps = .001)`). The funnel plot shows a degree of asymmetry with clustering to the right of the mid-line. The funnel rank correlation test was significant ($\tau$ = `r round(res$bias$rank$gen$tau, 3)`, *p* = `r format.pval(res$bias$rank$gen$pval, eps = .001, digits = 3)`). In contrast, the funnel regression test was  not significant (Z = `r round(res$bias$reg$gen$zval, 3)`, *p* = `r format.pval(res$bias$reg$gen$pval, eps = .001, digits = 2)`). The fail-safe N was `r res$bias$fsn$gen$fsnum %>% format(big.mark=",")`.
+
+The post-hoc fixed effects model (i.e., sensitivity analysis)
+was highly comparable for miscellaneous outcomes
+(fixed: *d* = `r round(res$fix$gen$b, 2)`, CI = `r round(res$fix$gen$ci.lb, 2)`-`r round(res$fix$gen$ci.ub, 2)`; 
+random: *d* = `r round(res$rma$gen$b, 2)`, CI = `r round(res$rma$gen$ci.lb, 2)`-`r round(res$rma$gen$ci.ub, 2)`).
+The discrepancy was larger for depression outcomes
+(fixed: *d* = `r round(res$fix$dep$b, 2)`, CI = `r round(res$fix$dep$ci.lb, 2)`-`r round(res$fix$dep$ci.ub, 2)`;
+random: *d* = `r round(res$rma$dep$b, 2)` CI = `r round(res$rma$dep$ci.lb, 2)`-`r round(res$rma$dep$ci.ub, 2)`).
+and larger still for anxiety outcomes
+(fixed: *d* = `r round(res$fix$anx$b, 2)`, CI = `r round(res$fix$anx$ci.lb, 2)`-`r round(res$fix$anx$ci.ub, 2)`;
+random: *d* = `r round(res$rma$anx$b, 2)`
+CI `r round(res$rma$anx$ci.lb, 2)`-`r round(res$rma$anx$ci.ub, 2)`).
+
+## Moderator Analyses {.unnumbered}
+
+Moderator analysis results are shown in Tables 3:6. The results of the omnibus models (QM tests) indicate moderators with significant between level variation. *Continent* was significant for all three outcome domains, with UK and North American studies producing larger effect sizes than other continents. Type of *analysis*, *sample size*, and treatment *develeopment stage* produced no significant findings.
+
+For *setting* (i.e., inpatient vs. outpatient) the omnibus model for anxiety was significant. Outpatient samples [*d* = 0.89, CI = 0.78-0.99]
+outperformed inpatient samples
+[*d* = 0.58, CI = 0.31-0.85]); although with CI overlap.
+
+*[[[--------- --------- --------- --------- Insert Tables 3:6 here --------- --------- --------- ---------]]]*
+
+Omnibus models for *modality*, *severity*, *experience* and *measurement tool* were significant for the anxiety and miscellaneous domains (but not depression).
+Therapy *modality* demonstrated that counselling
+(*d* = 0.43, CI = 0.38-0.49)
+produced smaller improvements in anxiety outcomes, although with a very small number of studies (*k* = 2). For miscellaneous outcomes CBT produced larger effect-sizes (*d* = 1.18, CI = 1.05-1.32) although with a narrow degree of overlap with psychodynamic (*d* = 0.93, CI = 0.79-1.07)
+and counselling outcomes (*d* = 0.90, CI = 0.75-1.06).
+For *severity*, anxiety outcomes were larger for mild
+(*d* = 0.99, CI = 0.79-1.20)
+and university services (*d* = 1.01, CI = 0.83-1.20) than for severe or moderate services.
+For miscellaneous outcomes, effect sizes were larger for mild (*d* = 1.08, CI = 0.95-1.21)
+and severe (*d* = 1.09, CI = 0.91-1.26)
+services.
+For *experience* unqualified professionals produced smaller improvements for miscellaneous outcomes 
+(*d* = 0.77, CI = 0.65-0.89) with no overlap;
+although superior improvements for anxiety outcomes
+(*d* = 1.12, CI = 0.86-1.39).
+Finally, for *measurement tool*, larger effect-sizes for anxiety outcomes was shown for the GAD-7
+(*d* = 0.96, CI = 0.78-1.15) than the
+BAI (*d* = 0.71, CI = 0.54-0.88).
+For miscellaneous outcomes, the OQ-45 demonstrated smaller effect-sizes (*d* = 0.57, CI = 0.41-0.74) than the other commonly used measures (BSI, CORE-OM, SCL).
+
+For the meta-regression (i.e., continuous) variables, there was no significant omnibus models for depression outcomes or miscellaneous outcomes. Employment was the only significant model for the anxiety domain.
+
+For analysis*sessions, neither variable was significant when combined within a multi-variate model for any of the three outcome domains. These findings remained when allowing the variables to interact, with the interaction term also not significant.
+
+For loss to follow-up*sessions, the multi-variate model found sessions to not be significant for each domain. Continent was not significant for the anxiety or miscellaneous domain. Continent was significant for the depression domain but only the level of the UK. When allowing for interaction terms there was no significant moderator or interaction term for any of the domains.
+
+```{r mod-table-dep, echo=FALSE, include=F,  warning=F, message=F}
+mod.res$sub$dep <- relocate(mod.res$sub$dep, mod, Level, K, SMD, ci, Q, I2)
+
+kable(mod.res$sub$dep, booktabs = TRUE, escape = FALSE, align = "l", longtable = TRUE,
+        caption = "subgroup (categorical) moderator analyses for depression outcomes.",
+           col.names = c("Moderator", "Level", "k", "d", "ci", "Q", "I2" ))  %>%
+  kable_styling(full_width = F, font_size = 12) %>% 
+        column_spec(1, width = "6em") %>% column_spec(2, width = "6.5em") %>%
+        column_spec(3, width = "2em") %>% column_spec(4, width = "3em") %>%
+        column_spec(5, width = "6em") %>% column_spec(6, width = "5em") %>%
+        column_spec(7, width = "2em") %>%
+    collapse_rows(columns = 1, valign = "top", latex_hline = "none") %>%
+  #row_spec(c(0, 1:3, 7, 14:16, 20)) %>%
+        pack_rows(mod.res$sector$sum$dep, 1,5, italic = T, bold = F, background = "gray!6") %>%
+        pack_rows(mod.res$ITT$sum$dep, 5,6, italic = T, bold = F) %>%
+        pack_rows(mod.res$setting$sum$dep, 7,9, italic = T, bold = F, background = "gray!6") %>%
+        pack_rows(mod.res$cont$sum$dep, 9,10, italic = T,  bold = T) %>% 
+        pack_rows(mod.res$therapy$sum$dep, 14,15, italic = T, bold = F, background = "gray!6") %>% 
+        pack_rows(mod.res$hour$sum$dep, 18,19, italic = T, bold = F) %>% 
+        pack_rows(mod.res$train$sum$dep, 20,21, italic = T, bold = F, background = "gray!6")  %>%
+        pack_rows(mod.res$measures$sum$dep, 22,23, italic = T, bold = F, background = "gray!6")  %>%
+        pack_rows(mod.res$sample.n.group$sum$dep, 24,25, italic = T, bold = F, background = "gray!6") %>% 
+  footnote(general_title = "Note.",
+               general = c("Model Outputs in Bold are significant at either", "* p = <.05.", "** Bonferroni adjustment, p = <.007"),
+               threeparttable = TRUE, footnote_as_chunk = TRUE, fixed_small_size = T)
+```
+
+```{r mod-table-anx, echo=FALSE, include=F,  warning=F, message=F}
+mod.res$sub$anx <- relocate(mod.res$sub$anx, mod, Level, K, SMD, ci, Q, I2)
+
+kable(mod.res$sub$anx, booktabs = TRUE, escape = FALSE, align = "l", longtable = TRUE,
+        caption = "subgroup (categorical) moderator analyses for anxiety outcomes.",
+            col.names = c("Moderator", "Level", "k", "d", "ci", "Q", "I2" ))  %>%
+  kable_styling(full_width = F, font_size = 12) %>% 
+        column_spec(1, width = "6em") %>% column_spec(2, width = "6.5em") %>%
+        column_spec(3, width = "2em") %>% column_spec(4, width = "3em") %>%
+        column_spec(5, width = "6em") %>% column_spec(6, width = "5em") %>%
+        column_spec(7, width = "2em") %>%
+    collapse_rows(columns = 1, valign = "top", latex_hline = "none") %>%
+  #row_spec(c(0, 1:3, 7, 14:16, 20)) %>%
+        pack_rows(mod.res$sector$sum$anx, 1,2, italic = T, bold = T, background = "gray!6") %>%
+        pack_rows(mod.res$ITT$sum$anx, 5,6, italic = T, bold = F) %>%
+        pack_rows(mod.res$setting$sum$anx, 7,8, italic = T, bold = T, background = "gray!6") %>%
+        pack_rows(mod.res$cont$sum$anx, 9,10, italic = T,  bold = T) %>% 
+        pack_rows(mod.res$therapy$sum$anx, 14,15, italic = T, bold = T, background = "gray!6") %>% 
+        pack_rows(mod.res$hour$sum$anx, 18,19, italic = T, bold = F) %>% 
+        pack_rows(mod.res$train$sum$anx, 20,21, italic = T, bold = T, background = "gray!6")  %>%
+        pack_rows(mod.res$measures$sum$anx, 22,23, italic = T, bold = T, background = "gray!6")  %>%
+        pack_rows(mod.res$sample.n.group$sum$anx, 24,25, italic = T, bold = T, background = "gray!6")  %>%
+
+  footnote(general_title = "Note.",
+               general = c("Model Outputs in Bold are significant at either", "* p = <.05.", "** Bonferroni adjustment, p = <.007"),
+               threeparttable = TRUE, footnote_as_chunk = TRUE, fixed_small_size = T)
+```
+
+```{r mod-table-gen, echo=FALSE, include=F,  warning=F, message=F}
+mod.res$sub$gen <- relocate(mod.res$sub$gen, mod, Level, K, SMD, ci, Q, I2)
+
+kable(mod.res$sub$gen, booktabs = TRUE, escape = FALSE, align = "l", longtable = TRUE,
+        caption = "subgroup (categorical) moderator analyses for general outcomes.",
+        col.names = c("Moderator", "Level", "k", "d", "ci", "Q", "I2" ))  %>%
+  kable_styling(full_width = F, font_size = 12) %>% 
+        column_spec(1, width = "6em") %>% column_spec(2, width = "6.5em") %>%
+        column_spec(3, width = "2em") %>% column_spec(4, width = "3em") %>%
+        column_spec(5, width = "6em") %>% column_spec(6, width = "5em") %>%
+        column_spec(7, width = "2em") %>%
+    collapse_rows(columns = 1, valign = "top", latex_hline = "none") %>%
+  #row_spec(c(0, 1:3, 7, 14:16, 20)) %>%
+        pack_rows(mod.res$sector$sum$gen, 1,2, italic = T, bold = T, background = "gray!6") %>%
+        pack_rows(mod.res$ITT$sum$gen, 5,6, italic = T, bold = F) %>%
+        pack_rows(mod.res$setting$sum$gen, 7,8, italic = T, bold = F, background = "gray!6") %>%
+        pack_rows(mod.res$cont$sum$gen, 9,10, italic = T,  bold = T) %>% 
+        pack_rows(mod.res$therapy$sum$gen, 14,15, italic = T, bold = T, background = "gray!6") %>% 
+        pack_rows(mod.res$hour$sum$gen, 18,19, italic = T, bold = F) %>% 
+        pack_rows(mod.res$train$sum$gen, 20,21, italic = T, bold = T, background = "gray!6")  %>%
+        pack_rows(mod.res$measures$sum$gen, 22,23, italic = T, bold = T, background = "gray!6")  %>%
+        pack_rows(mod.res$sample.n.group$sum$gen, 27,28, italic = T, bold = T, background = "gray!6")  %>%
+
+  footnote(general_title = "Note.",
+               general = c("Model Outputs in Bold are significant at either", "* p = <.05.", "** Bonferroni adjustment, p = <.007"),
+               threeparttable = TRUE, footnote_as_chunk = TRUE, fixed_small_size = T)
+```
+
+```{r mod-table-reg, echo=FALSE, include=F,  warning=F, message=F}
+  kable(tabs$mod.reg, booktabs = TRUE, escape = TRUE,
+        align = c("l","l","l","c","c","c","l","c","c"),
+        col.names = c("Domain","Moderator","Mean (range)","k","B", "CI", "SE", "Q", "QMP", "R2"),
+        longtable = FALSE, caption = "Meta-regression moderator variables (continuous) for depresison, anxiety and general outcome domains.") %>% 
+    kable_styling(full_width = F, font_size = 12) %>%
+  column_spec(1, width = "4.25em", bold = T) %>%  column_spec(2, width = "11.75em")%>%
+  column_spec(3, width = "9.5em")%>% column_spec(4, width = "1.5em")%>%
+  column_spec(5, width = "3em")%>% column_spec(6, width = "5em")%>%
+  column_spec(7, width = "2em")%>% column_spec(8, width = "1.8em")%>%
+  column_spec(9, width = "1em")%>% column_spec(10, width = "1.7em")%>% 
+  row_spec(c(0,2,4,6,8,10,12,14,16,18,20), extra_latex_after = "\\rowcolor{gray!6}") %>%
+  collapse_rows(columns = 1, latex_hline = "major", valign = "top") %>%
+        footnote(general_title = "Note.",
+                 general = c("Model Outputs in Bold are significant at either",
+                           "* p = <.05.",
+                           "** Bonferroni adjustment, p = <.00625"),
+               threeparttable = TRUE, footnote_as_chunk = TRUE, fixed_small_size = T)
+```
+
+
+
+
+
+
