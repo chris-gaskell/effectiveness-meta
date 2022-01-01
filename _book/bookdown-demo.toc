@@ -1,0 +1,38 @@
+\contentsline {chapter}{About}{iii}{chapter*.2}%
+\contentsline {part}{I\hspace {1em}Systematic Literature Review}{1}{part.1}%
+\contentsline {chapter}{Abstract}{2}{chapter*.5}%
+\contentsline {chapter}{Introduction}{3}{chapter*.6}%
+\contentsline {section}{Aims/Hypotheses}{5}{section*.7}%
+\contentsline {chapter}{Method}{6}{chapter*.8}%
+\contentsline {section}{Systematic Literature Search}{6}{section*.9}%
+\contentsline {subsection}{Participants}{6}{section*.9}%
+\contentsline {subsection}{Interventions}{7}{section*.9}%
+\contentsline {subsection}{Comparisons and Multiple Samples}{7}{section*.9}%
+\contentsline {subsection}{Outcomes}{7}{table.caption.10}%
+\contentsline {section}{Study Selection}{8}{table.caption.10}%
+\contentsline {section}{Additional Papers}{9}{table.caption.10}%
+\contentsline {subsection}{Author Requests}{9}{table.caption.10}%
+\contentsline {section}{Quality Assessment}{9}{table.caption.10}%
+\contentsline {section}{Data Extraction}{10}{table.caption.10}%
+\contentsline {subsubsection}{Effect-size calculation}{10}{table.caption.10}%
+\contentsline {section}{Analysis}{11}{table.0.2}%
+\contentsline {section}{Information Requests}{12}{table.0.2}%
+\contentsline {chapter}{Results}{13}{chapter*.11}%
+\contentsline {section}{Studies}{13}{section*.12}%
+\contentsline {section}{Narrative Synthesis}{14}{figure.caption.13}%
+\contentsline {section}{Demographic Information}{14}{figure.caption.13}%
+\contentsline {section}{Methodology/Study Information}{16}{figure.caption.13}%
+\contentsline {section}{Meta Analyses}{19}{table.0.5}%
+\contentsline {subsection}{Samples}{19}{table.0.5}%
+\contentsline {subsection}{Outcome Measures}{19}{table.0.5}%
+\contentsline {subsection}{Primary Meta Analyses}{20}{table.0.5}%
+\contentsline {subsubsection}{Depression}{20}{table.0.6}%
+\contentsline {subsubsection}{Anxiety}{20}{table.0.6}%
+\contentsline {subsubsection}{General}{21}{table.0.6}%
+\contentsline {subsection}{Moderator Analyses}{21}{table.0.6}%
+\contentsline {subsection}{Meta Regression}{29}{table.0.9}%
+\contentsline {chapter}{Appendix}{31}{chapter*.18}%
+\contentsline {section}{Appendix A}{31}{section*.19}%
+\contentsline {section}{Appendix B}{32}{table.0.11}%
+\contentsline {section}{Appendix C}{32}{table.0.11}%
+\contentsline {section}{References}{35}{table.0.12}%
